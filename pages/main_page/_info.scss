@@ -32,6 +32,7 @@
     }
 
     @media screen and (max-width: 980px) and (min-width: 769px){
+        padding: 0 0 9em 0;
 
         .info-first{
             
@@ -52,7 +53,7 @@
         }
     }
     @media screen and (max-width: 768px) and (min-width: 500px){
-        padding: 5em 0;
+        padding: 0 0 5em 0;
         height: 45em;
         flex-flow: row wrap;
 
@@ -80,7 +81,7 @@
         align-items: flex-start;
         justify-content: center;
         height: 70em;
-        padding: 3vw 0 10vw 15vw;
+        padding: 0 0 10vw 15vw;
         width: 70vw;
 
         .info-first{

@@ -1,0 +1,83 @@
+.history{
+    width: 100%;
+    height: 58em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(/makets/MAIN\ PAGE/history_fon.jpg);
+    background-size: 120em;
+    background-repeat: no-repeat;
+    background-position: center 70%;
+
+    .history-container{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        width: 52em;
+        height: 46em;
+
+        background-color: rgba($color: #FFFFFF, $alpha: .72);
+
+        h2{
+            color: $main-black;
+            @extend %h2-options-pc;
+            font-size: 2.3em;
+            margin: 1.5vw 0;
+        }
+        p{
+            text-align: center;
+            font-size: 1.75em;
+            font-weight: 300;
+            color: black;
+            padding: 0 2.5em;
+            line-height: 1.5em;
+        }
+    }
+    @media screen and (max-width: 980px) and (min-width: 769px){
+        height: 45em;
+        background-size: 85em;
+
+        .history-container{
+            width: 40em;
+            height: 37em;
+
+            p{
+                font-size: 1.35em;
+            }
+        }
+    }
+    @media screen and (max-width: 768px) and (min-width: 500px){
+        height: 35em;
+        background-size: 70em;
+
+        .history-container{
+            width: 28em;
+            height: 30em;
+
+            h2{
+                font-size: 1.5em;
+            }
+            p{
+                font-size: 1.05em;
+            }
+        }
+    }
+    @media screen and (max-width: 499px){
+        height: 120vw;
+        background-size: 200vw;
+
+        .history-container{
+            width: 70vw;
+            height: 100vw;
+
+            h2{
+                font-size: 4vw;
+            }
+            p{
+                font-size: 3vw;
+            }
+        }
+    }
+}
