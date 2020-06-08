@@ -1,6 +1,6 @@
 header{
         width: 97.1vw;
-        height: 64em;
+        height: 62em;
         
 
 
@@ -40,6 +40,13 @@ header{
             background-color: $button-red-color;
         }  
     }
+    .kl-logo{
+        display: none;
+    }
+    .option-icon{
+        display: none;
+    }
+
     ul{
         list-style-type: none;
         display: flex;
@@ -60,5 +67,148 @@ header{
         height: 100%;
         object-fit: cover;
 
+    }
+
+    @media screen and (max-width: 980px) and (min-width: 769px){
+        height: 50em;
+
+        ul{
+            li{
+                font-size: 1.7vw;
+                
+                img{
+                    width: 15vw;
+                }
+            }
+        }
+        .video{
+            width: 99.7%;
+            height: 80%;
+        }
+    }
+
+    @media screen and (max-width: 768px) and (min-width: 500px){
+        height: 46em;
+
+        .high-bar{
+            background-color: rgba($color: #444444, $alpha: 0);
+            height: auto;
+            padding: 0;
+
+            .icon-location{
+                width: 28px;
+                height: 28px;
+                top: 19px;
+                left: 26px;
+            }
+            h4{
+                top: -10px;
+                left: 55px;
+                font-size: 1.4em;
+            }
+            a{
+                top: 15px;
+                right: 30px;
+                width: 8em;
+                padding: .7em 0;
+            }
+        }
+        .kl-logo{
+            display: block;
+            position: absolute;
+            width: 8em;
+            top: 2.5em;
+            left: 41%;
+        }
+        .option-icon{
+            display: block;
+            position: fixed;
+            top: 65px;
+            right: 30px;
+            width: 2.4em;
+
+            filter: invert(1);
+            z-index: 2;
+        }
+
+        ul{
+            display: none;
+            li{
+                font-size: 1.7vw;
+                
+                img{
+                    display: none;
+                    width: 15vw;
+                }
+            }
+        }
+        .video{
+            top: 13vh;
+            width: 99.7%;
+            height: 60%;
+        }
+    }
+
+    @media screen and (max-width: 499px){
+        height: 35em;
+
+        .high-bar{
+            background-color: rgba($color: #444444, $alpha: 0);
+            height: auto;
+            padding: 0;
+
+            .icon-location{
+                width: 25px;
+                height: 25px;
+                top: 15px;
+                left: 26px;
+            }
+            h4{
+                top: -5px;
+                left: 55px;
+                font-size: 1.1em;
+            }
+            a{
+                top: 16px;
+                right: 30px;
+                width: 8em;
+                padding: .4em 0;
+                font-size: .85em;
+            }
+        }
+        .kl-logo{
+            display: block;
+            position: absolute;
+            width: 8em;
+            top: 3.5em;
+            left: 35vw;
+        }
+        .option-icon{
+            display: block;
+            position: fixed;
+            top: 65px;
+            right: 5vw;
+            width: 2.2em;
+
+            filter: invert(1);
+            z-index: 2;
+        }
+
+        ul{
+            display: none;
+            li{
+                font-size: 1.7vw;
+                
+                img{
+                    display: none;
+                    width: 15vw;
+                }
+            }
+        }
+        .video{
+            top: 16vh;
+            width: 99.7%;
+            height: 40%;
+        }
     }
 }

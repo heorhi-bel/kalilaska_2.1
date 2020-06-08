@@ -12,8 +12,38 @@ $main-white: #FFFFFF;
     font-weight: 600;
 }
 %h3-options-pc{
-    font-size: 52px;
+    font-size: 22px;
     font-weight: 600;
+}
+%p-options-pc{
+    font-size: 22px;
+    font-weight: 200;
+}
+%h3-options-note{
+    font-size: 2vw;
+    font-weight: 600;
+}
+%p-options-note{
+    font-size: 1vw;
+    font-weight: 200;
+}
+
+.button-style-red{
+    width: 8em;
+    text-align: center;
+    padding: .5em 0;
+
+    background-color: $button-red-color;
+
+    @media screen and (max-width: 768px) and (min-width: 500px){
+        width: 8em;
+        padding: .7em 0;
+    }
+    @media screen and (max-width: 499px){
+        width: 8em;
+        padding: .4em 0;
+        font-size: .85em;
+    }
 }
 
 

@@ -1,6 +1,29 @@
+.info .info-first h3 {
+  font-size: 22px;
+  font-weight: 600; }
+
+.info .info-first p {
+  font-size: 22px;
+  font-weight: 200; }
+
+.button-style-red {
+  width: 8em;
+  text-align: center;
+  padding: .5em 0;
+  background-color: #AF1717; }
+  @media screen and (max-width: 768px) and (min-width: 500px) {
+    .button-style-red {
+      width: 8em;
+      padding: .7em 0; } }
+  @media screen and (max-width: 499px) {
+    .button-style-red {
+      width: 8em;
+      padding: .4em 0;
+      font-size: .85em; } }
+
 header {
   width: 97.1vw;
-  height: 64em; }
+  height: 62em; }
   header .high-bar {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -36,6 +59,10 @@ header {
       text-align: center;
       padding: .5em 0;
       background-color: #AF1717; }
+  header .kl-logo {
+    display: none; }
+  header .option-icon {
+    display: none; }
   header ul {
     list-style-type: none;
     display: -webkit-box;
@@ -59,6 +86,208 @@ header {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover; }
+  @media screen and (max-width: 980px) and (min-width: 769px) {
+    header {
+      height: 50em; }
+      header ul li {
+        font-size: 1.7vw; }
+        header ul li img {
+          width: 15vw; }
+      header .video {
+        width: 99.7%;
+        height: 80%; } }
+  @media screen and (max-width: 768px) and (min-width: 500px) {
+    header {
+      height: 46em; }
+      header .high-bar {
+        background-color: rgba(68, 68, 68, 0);
+        height: auto;
+        padding: 0; }
+        header .high-bar .icon-location {
+          width: 28px;
+          height: 28px;
+          top: 19px;
+          left: 26px; }
+        header .high-bar h4 {
+          top: -10px;
+          left: 55px;
+          font-size: 1.4em; }
+        header .high-bar a {
+          top: 15px;
+          right: 30px;
+          width: 8em;
+          padding: .7em 0; }
+      header .kl-logo {
+        display: block;
+        position: absolute;
+        width: 8em;
+        top: 2.5em;
+        left: 41%; }
+      header .option-icon {
+        display: block;
+        position: fixed;
+        top: 65px;
+        right: 30px;
+        width: 2.4em;
+        -webkit-filter: invert(1);
+                filter: invert(1);
+        z-index: 2; }
+      header ul {
+        display: none; }
+        header ul li {
+          font-size: 1.7vw; }
+          header ul li img {
+            display: none;
+            width: 15vw; }
+      header .video {
+        top: 13vh;
+        width: 99.7%;
+        height: 60%; } }
+  @media screen and (max-width: 499px) {
+    header {
+      height: 35em; }
+      header .high-bar {
+        background-color: rgba(68, 68, 68, 0);
+        height: auto;
+        padding: 0; }
+        header .high-bar .icon-location {
+          width: 25px;
+          height: 25px;
+          top: 15px;
+          left: 26px; }
+        header .high-bar h4 {
+          top: -5px;
+          left: 55px;
+          font-size: 1.1em; }
+        header .high-bar a {
+          top: 16px;
+          right: 30px;
+          width: 8em;
+          padding: .4em 0;
+          font-size: .85em; }
+      header .kl-logo {
+        display: block;
+        position: absolute;
+        width: 8em;
+        top: 3.5em;
+        left: 35vw; }
+      header .option-icon {
+        display: block;
+        position: fixed;
+        top: 65px;
+        right: 5vw;
+        width: 2.2em;
+        -webkit-filter: invert(1);
+                filter: invert(1);
+        z-index: 2; }
+      header ul {
+        display: none; }
+        header ul li {
+          font-size: 1.7vw; }
+          header ul li img {
+            display: none;
+            width: 15vw; }
+      header .video {
+        top: 16vh;
+        width: 99.7%;
+        height: 40%; } }
+
+.info {
+  width: 100vw;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 9em 0;
+  line-height: 2em; }
+  .info .info-first {
+    height: 10em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .info .info-ordernow a {
+    margin: 2em 0 0 0;
+    font-size: 16px;
+    padding: .5em 1em; }
+  @media screen and (max-width: 980px) and (min-width: 769px) {
+    .info .info-first h3 {
+      font-size: 2vw;
+      font-weight: 600; }
+    .info .info-first p {
+      font-size: 2vw;
+      font-weight: 200; }
+    .info .info-first a {
+      margin: 2vw 0 0 0;
+      font-size: 1.75vw;
+      padding: .8vw .5vw; } }
+  @media screen and (max-width: 768px) and (min-width: 500px) {
+    .info {
+      padding: 5em 0;
+      height: 45em;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap; }
+      .info .info-first h3 {
+        font-size: 5vw;
+        font-weight: 600; }
+      .info .info-first p {
+        font-size: 5vw;
+        font-weight: 200;
+        line-height: 1.5em; }
+      .info .info-first a {
+        margin: 7vw 0 0 0;
+        font-size: 3.75vw;
+        padding: 2.8vw 2.5vw; } }
+  @media screen and (max-width: 499px) {
+    .info {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column wrap;
+              flex-flow: column wrap;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      height: 70em;
+      padding: 3vw 0 10vw 15vw;
+      width: 70vw; }
+      .info .info-first {
+        height: auto;
+        padding: 1.5em 0; }
+        .info .info-first h3 {
+          font-size: 6.5vw;
+          font-weight: 600; }
+        .info .info-first p {
+          font-size: 6.5vw;
+          font-weight: 200;
+          line-height: 1.5em; }
+        .info .info-first a {
+          margin: 7vw 4.8vw 0 4.8vw;
+          font-size: 3.75vw;
+          padding: 2.8vw 2.5vw; } }
 
 * a {
   text-decoration: none;
