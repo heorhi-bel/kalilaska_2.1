@@ -1,8 +1,12 @@
 $footer-black: #080808;
 $main-black: #111111;
+$main-black-light: #141414;
+$footer-black: #0e0e0e;
 $button-red-color: #AF1717;
 $main-white: #FFFFFF;
+// for video after -->
 
+// <-- for video:after
 %h1-options-pc{
     font-size: 64px;
     font-weight: 700;
@@ -26,6 +30,9 @@ $main-white: #FFFFFF;
 %p-options-note{
     font-size: 1vw;
     font-weight: 200;
+}
+%text-shadow-option{
+    text-shadow: 5px 5px 5px rgba($color: $main-black-light, $alpha: .87);
 }
 
 .button-style-red{

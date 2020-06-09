@@ -1,0 +1,158 @@
+.qualityfood{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    width: inherit;
+    height: auto;
+    margin: 8em 0;
+
+    background-color: $main-black-light;
+
+    .qualityfood-container{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0 2em 0 5vw;
+
+        .h2-container{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            @extend %h2-options-pc;
+            font-size: 26px;
+            @extend %text-shadow-option;   
+            
+        }
+        p{
+            @extend %p-options-pc;
+            font-size: 28px;
+            text-align: center;
+            line-height: 1.5em;
+            width: 40vw;
+            margin: 6em 0 5em 0;
+            @extend %text-shadow-option;
+        }
+        a{
+            font-size: 24px;
+        }
+    }
+    .qualityfood--image{
+        width: 49%;
+        height: 50em;
+
+        background-image: url(/makets/MAIN\ PAGE/menu_one_1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    @media screen and (max-width: 980px) and (min-width: 769px){
+
+        .qualityfood-container{
+            
+            padding: 0 2em 0 5vw;
+    
+            .h2-container{
+                
+                font-size: 20px;
+                
+            }
+            p{
+                font-size: 24px;
+
+                width: 40vw;
+                margin: 6em 0 5em 0;
+            }
+            a{
+                font-size: 24px;
+            }
+        }
+        .qualityfood--image{
+            height: 44em;
+    
+            background-position: 45% center;
+        }
+    }
+
+    @media screen and (max-width: 768px) and (min-width: 500px){
+        position: relative;
+        height: 48em;
+        
+        .qualityfood-container{
+            z-index: 1;  
+            padding: 0;     
+    
+            .h2-container{
+                flex-flow: row nowrap;
+                font-size: 20px;
+                margin: 3em 0 0 0;
+                h2{
+                    padding: 0 4vw;
+                }
+            }
+            p{
+                font-size: 24px;
+                width: 70vw;
+                margin: 3.5em 0 1em 0;
+            }
+            a{
+                font-size: 22px;
+            }
+        }
+        .qualityfood--image{
+            position: absolute;
+            height: 50em;
+            width: 99.8%;
+            top: 0;
+            left: 0%;
+            right: 100%;
+            bottom: 100%;
+                
+            background-size: 70em;
+            background-position: 20% .4em;
+        }
+
+    }
+
+    @media screen and (max-width: 499px){
+        position: relative;
+        height: 40em;
+        
+        .qualityfood-container{
+            z-index: 1;  
+            padding: 0;     
+    
+            .h2-container{
+                flex-flow: row nowrap;
+                font-size: 3.5vw;
+                margin: 3em 0 0 0;
+                h2{
+                    padding: 0 4vw;
+                }
+            }
+            p{
+                font-size: 4.5vw;
+                width: 70vw;
+                margin: 2em 0 1.5em 0;
+            }
+            a{
+                font-size: 3.5vw;
+            }
+        }
+        .qualityfood--image{
+            position: absolute;
+            height: 42em;
+            width: 99.8%;
+            top: 0;
+            left: 0%;
+            right: 100%;
+            bottom: 100%;
+                
+            background-size: 62em;
+            background-position: 30% .4em;
+        }
+
+    }
+}
