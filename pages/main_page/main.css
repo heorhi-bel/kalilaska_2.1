@@ -716,13 +716,26 @@ footer {
       footer .footer-div-container .subscribe-div img {
         width: 3.5em;
         -webkit-filter: invert(1);
-                filter: invert(1); }
+                filter: invert(1);
+        border-radius: 30px;
+        -webkit-transition-duration: .5s;
+                transition-duration: .5s; }
+        footer .footer-div-container .subscribe-div img:hover {
+          -webkit-filter: invert(0);
+                  filter: invert(0);
+          background-color: white;
+          padding: 7px;
+          -webkit-transition: .4s;
+          transition: .4s; }
     footer .footer-div-container a {
       font-size: 22px;
       font-weight: 300;
       text-align: center;
       padding: .5em 1em;
       border: 2px solid white; }
+      footer .footer-div-container a:hover {
+        background-color: white;
+        color: black; }
   footer .footer-div-p-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -745,6 +758,36 @@ footer {
       font-weight: 200;
       opacity: .87;
       padding-right: .5vw; }
+  @media screen and (max-width: 980px) and (min-width: 769px) {
+    footer .kl-logo-footer {
+      width: 12em;
+      padding-top: 3em;
+      padding-left: 2em; }
+    footer .navbar {
+      padding: 2em 0 0 0; }
+      footer .navbar li {
+        font-size: 1em; }
+    footer .footer-div-container {
+      padding: 0 5em 0 4.7vw; }
+      footer .footer-div-container .subscribe-div h4 {
+        font-size: 18px; }
+      footer .footer-div-container .subscribe-div img {
+        width: 2.8em; }
+      footer .footer-div-container a {
+        font-size: 20px;
+        padding: .5em 1em; }
+    footer .footer-div-p-container p:first-child {
+      padding-left: 4em; }
+    footer .footer-div-p-container p:last-child {
+      font-size: 10px;
+      font-weight: 200;
+      opacity: .87;
+      padding-right: .5vw; } }
+  @media screen and (max-width: 768px) and (min-width: 500px) {
+    footer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
 
 * a {
   text-decoration: none;

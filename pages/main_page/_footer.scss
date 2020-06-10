@@ -63,7 +63,15 @@ footer{
             img{
                 width: 3.5em;
                 filter: invert(1);
-
+                border-radius: 30px;
+                transition-duration: .5s;
+                &:hover{
+                    filter: invert(0);
+                    background-color: white;
+                    padding: 7px;
+                    
+                    transition: .4s;
+                }
             }
         }
         a{
@@ -73,6 +81,11 @@ footer{
             padding: .5em 1em;
 
             border: 2px solid white;
+
+            &:hover{
+                background-color: white;
+                color: black;
+            }
         }
     }
     .footer-div-p-container{
@@ -93,5 +106,63 @@ footer{
             padding-right: .5vw;
         }        
     }
+
+
+
+    //---------->screens
+    @media screen and (max-width: 980px) and (min-width: 769px){
+
+        .kl-logo-footer{
+            width: 12em;
+            padding-top: 3em;
+            padding-left: 2em;
+        }
     
+        .navbar{
+            padding: 2em 0 0 0;
+    
+            li{
+                font-size: 1em;                
+            }
+        }
+        .footer-div-container{
+            padding: 0 5em 0 4.7vw;
+    
+            .subscribe-div{
+    
+                h4{ 
+                    font-size: 18px;
+                }
+                img{
+                    width: 2.8em;
+    
+                }
+            }
+            a{
+                font-size: 20px;
+                padding: .5em 1em;
+            }
+        }
+        .footer-div-p-container{
+    
+            p:first-child{
+                padding-left: 4em;
+            }
+            p:last-child{
+                font-size: 10px;
+                font-weight: 200;
+                opacity: .87;
+                padding-right: .5vw;
+            }  
+        }      
+    }   
+    
+    @media screen and (max-width: 768px) and (min-width: 500px){
+        display: flex;
+        
+    }
+
+    @media screen and (max-width: 499px){
+
+    }
 }
