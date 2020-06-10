@@ -94,7 +94,10 @@ header {
       font-weight: 600;
       z-index: 1; }
       header .navbar li a:hover {
-        padding: 2px 5px; }
+        padding: 2px 8px;
+        -webkit-filter: invert(1);
+                filter: invert(1);
+        background-color: black; }
   header .video {
     position: absolute;
     top: 43px;
@@ -672,6 +675,11 @@ footer {
     footer .navbar li {
       font-size: 1.3em;
       font-weight: 600; }
+      footer .navbar li a:hover {
+        padding: 2px 8px;
+        -webkit-filter: invert(1);
+                filter: invert(1);
+        background-color: black; }
   footer .footer-div-container {
     grid-area: container;
     display: -webkit-box;
@@ -741,16 +749,15 @@ footer {
 * a {
   text-decoration: none;
   color: white;
-  -webkit-transition: .1s;
-  transition: .1s; }
+  -webkit-transition: .4s;
+  transition: .4s; }
   * a:focus {
-    outline: none; }
+    outline: none;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05); }
   * a:hover {
-    -webkit-filter: invert(1);
-            filter: invert(1);
-    background-color: black;
-    -webkit-transition: .4s;
-    transition: .4s; }
+    -webkit-transition: .5s;
+    transition: .5s; }
 
 body {
   font-family: 'Oswald', sans-serif;

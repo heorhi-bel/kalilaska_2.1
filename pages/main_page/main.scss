@@ -6,20 +6,18 @@
 @import '_news';
 @import '_footer';
 
-
 *{
     a{
         text-decoration: none;
         color: white;
-        transition: .1s;
+        transition: .4s;
         
         &:focus{
             outline: none;
+            transform: scale(1.05);
         }
         &:hover{
-            filter: invert(1);
-            background-color: black;
-            transition: .4s;
+            transition: .5s;
         }
     }
 }
@@ -30,3 +28,4 @@ body {
     color: white;
     // overflow-x: hidden;
 }
+

@@ -62,7 +62,9 @@ header{
             z-index: 1;
 
             a:hover{
-                padding: 2px 5px;
+                padding: 2px 8px;
+                filter: invert(1);
+                background-color: black;
             }
         }
     }
