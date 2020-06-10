@@ -419,7 +419,7 @@ header:after {
   width: inherit;
   height: auto;
   margin: 8em 0 0 0;
-  background-color: #141414; }
+  background-color: #111111; }
   .qualityfood .qualityfood-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -542,7 +542,8 @@ header:after {
         background-position: 30% .4em; } }
 
 .news {
-  background-color: #111111; }
+  background-color: #111111;
+  padding-top: 2em; }
   .news h2 {
     margin-left: 4vw;
     margin-bottom: 1.5em; }
@@ -557,9 +558,9 @@ header:after {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     position: relative;
     margin-bottom: 6em; }
     .news .news-container .news-state {
@@ -580,14 +581,15 @@ header:after {
       width: 20vw;
       height: auto; }
       .news .news-container .news-state h3 {
-        margin: 0 0 1em 0; }
+        margin: 0 0 .5em 0; }
       .news .news-container .news-state p {
         font-size: 20px;
-        width: inherit; }
+        width: inherit;
+        line-height: 1.5em; }
     .news .news-container .news-state::after {
       content: '';
       width: 100.5%;
-      height: 96%;
+      height: 100%;
       position: absolute;
       top: 0;
       left: 0;
@@ -639,6 +641,10 @@ header:after {
           border: none;
           border-top: 3px solid white;
           top: -15px; } }
+
+footer {
+  width: inherit;
+  background-color: #000000; }
 
 * a {
   text-decoration: none;
