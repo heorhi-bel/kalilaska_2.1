@@ -1,12 +1,16 @@
+.news h2 {
+  font-size: 60px;
+  font-weight: 700; }
+
 .history .history-container h2, .qualityfood .qualityfood-container .h2-container {
   font-size: 52px;
   font-weight: 600; }
 
-.info .info-first h3 {
+.info .info-first h3, .news .news-container .news-state h3 {
   font-size: 22px;
   font-weight: 600; }
 
-.info .info-first p, .qualityfood .qualityfood-container p {
+.info .info-first p, .qualityfood .qualityfood-container p, .news .news-container .news-state p {
   font-size: 22px;
   font-weight: 200; }
 
@@ -414,7 +418,7 @@ header:after {
           justify-content: center;
   width: inherit;
   height: auto;
-  margin: 8em 0;
+  margin: 8em 0 0 0;
   background-color: #141414; }
   .qualityfood .qualityfood-container {
     display: -webkit-box;
@@ -536,6 +540,105 @@ header:after {
         bottom: 100%;
         background-size: 62em;
         background-position: 30% .4em; } }
+
+.news {
+  background-color: #111111; }
+  .news h2 {
+    margin-left: 4vw;
+    margin-bottom: 1.5em; }
+  .news .news-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    margin-bottom: 6em; }
+    .news .news-container .news-state {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column nowrap;
+              flex-flow: column nowrap;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      position: relative;
+      width: 20vw;
+      height: auto; }
+      .news .news-container .news-state h3 {
+        margin: 0 0 1em 0; }
+      .news .news-container .news-state p {
+        font-size: 20px;
+        width: inherit; }
+    .news .news-container .news-state::after {
+      content: '';
+      width: 100.5%;
+      height: 96%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-right: 3px solid white; }
+  @media screen and (max-width: 980px) and (min-width: 769px) {
+    .news h2 {
+      font-size: 48px; }
+    .news .news-container {
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+      .news .news-container .news-state {
+        width: 30vw; }
+      .news .news-container .news-state:last-child {
+        display: none; } }
+  @media screen and (max-width: 768px) and (min-width: 500px) {
+    .news h2 {
+      font-size: 48px; }
+    .news .news-container {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+      .news .news-container .news-state {
+        width: 45vw;
+        padding-bottom: 2em; }
+      .news .news-container .news-state:nth-child(2n)::after {
+        border: none; } }
+  @media screen and (max-width: 499px) {
+    .news {
+      padding-top: 3em; }
+      .news h2 {
+        font-size: 36px;
+        padding-left: 4vw;
+        margin-bottom: 2em; }
+      .news .news-container {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        .news .news-container .news-state {
+          width: 80vw;
+          padding-bottom: 2em; }
+        .news .news-container .news-state:nth-child(n)::after {
+          border: none;
+          border-top: 3px solid white;
+          top: -15px; } }
 
 * a {
   text-decoration: none;

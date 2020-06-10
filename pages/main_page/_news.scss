@@ -1,0 +1,106 @@
+.news{
+    background-color: $main-black;
+
+    h2{
+        @extend %h1-options-pc;
+        margin-left: 4vw;
+        margin-bottom: 1.5em;
+    }
+    .news-container{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+        margin-bottom: 6em;
+
+        .news-state{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: flex-start;
+            justify-content: flex-start;
+            position: relative;
+            width: 20vw;
+            height: auto;
+            
+            h3{
+                @extend %h3-options-pc;
+                margin: 0 0 1em 0;
+            }
+            p{
+                @extend %p-options-pc;
+                font-size: 20px;
+                width: inherit;
+            }
+        }
+        .news-state::after{
+            content: '';
+            width: 100.5%;
+            height: 96%;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+
+            border-right: 3px solid white;
+        }
+    }
+
+    @media screen and (max-width: 980px) and (min-width: 769px){
+
+        h2{
+            font-size: 48px;
+        }
+        .news-container{
+            justify-content: space-around;
+
+            .news-state{
+                width: 30vw;
+            }
+            .news-state:last-child{
+                display: none;
+            }
+        }
+    }
+    @media screen and (max-width: 768px) and (min-width: 500px){
+
+        h2{
+            font-size: 48px;
+        }
+        .news-container{
+            flex-flow: row wrap;
+            justify-content: space-around;
+
+            .news-state{
+                width: 45vw;
+                padding-bottom: 2em;
+            }
+            .news-state:nth-child(2n)::after{
+                border: none;
+            }
+        }
+    }
+    @media screen and (max-width: 499px){
+        padding-top: 3em;
+
+        h2{
+            font-size: 36px;
+            padding-left: 4vw;
+            margin-bottom: 2em;
+        }
+        .news-container{
+            flex-flow: row wrap;
+            justify-content: center;
+
+            .news-state{
+                width: 80vw;
+                padding-bottom: 2em;
+            }
+            .news-state:nth-child(n)::after{
+                border: none;
+                border-top: 3px solid white;
+                top: -15px;
+            }
+        }
+    }
+}
