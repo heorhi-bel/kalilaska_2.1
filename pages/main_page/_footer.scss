@@ -1,5 +1,88 @@
 footer{
     width: inherit;
-    
+    height: auto;
     background-color: $footer-black;
+    //<--grid layout
+    display: grid;
+    grid-template: 6em 9em 5em  / 1.5fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "logo  list-ul list-ul list-ul list-ul"
+        "logo container container container container"
+        "little-p little-p little-p little-p little-p";
+    //--> grid layout
+
+    .kl-logo-footer{
+        width: 20em;
+        padding-top: 3em;
+        padding-left: 5vw;
+
+        grid-area: logo;
+    }
+
+    .navbar{
+        list-style-type: none;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        padding: 2em 0 0 0;
+
+        grid-area: list-ul;
+
+        li{
+            font-size: 1.3em;
+            font-weight: 600;
+        }
+    }
+    .footer-div-container{
+        grid-area: container;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5em 0 4.7vw;
+
+        .subscribe-div{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: center;
+
+            h4{ 
+                font-size: 20px;
+                font-weight: 500;
+            }
+            img{
+                width: 3.5em;
+                filter: invert(1);
+
+            }
+        }
+        a{
+            font-size: 22px;
+            font-weight: 300;
+            text-align: center;
+            padding: .5em 1em;
+
+            border: 2px solid white;
+        }
+    }
+    .footer-div-p-container{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        grid-area: little-p;
+
+        p:first-child{
+            padding-left: 9em;
+        }
+        p:last-child{
+            font-size: 12px;
+            font-weight: 200;
+            opacity: .87;
+            padding-right: .5vw;
+        }        
+    }
+    
 }
