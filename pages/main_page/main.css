@@ -92,12 +92,15 @@ header {
     header .navbar li {
       font-size: 1.3vw;
       font-weight: 600;
-      z-index: 1; }
+      z-index: 1;
+      text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.87); }
       header .navbar li a:hover {
         padding: 2px 8px;
         -webkit-filter: invert(1);
                 filter: invert(1);
         background-color: black; }
+      header .navbar li .kl-logo-ul {
+        width: 10em; }
   header .video {
     position: absolute;
     top: 43px;
@@ -796,8 +799,7 @@ footer {
   transition: .4s; }
   * a:focus {
     outline: none;
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05); }
+    border: 2px solid white; }
   * a:hover {
     -webkit-transition: .5s;
     transition: .5s; }
@@ -806,5 +808,13 @@ body {
   font-family: 'Oswald', sans-serif;
   background-color: #111111;
   color: white; }
+
+.logo-invert {
+  -webkit-filter: invert(1);
+          filter: invert(1); }
+
+.red-button:hover {
+  background-color: white;
+  color: #AF1717; }
 
 /*# sourceMappingURL=main.css.map */

@@ -14,7 +14,7 @@
         
         &:focus{
             outline: none;
-            transform: scale(1.05);
+            border: 2px solid white; 
         }
         &:hover{
             transition: .5s;
@@ -27,5 +27,17 @@ body {
     background-color: $main-black;
     color: white;
     // overflow-x: hidden;
+}
+
+.logo-invert{
+    filter: invert(1);
+}
+
+.red-button{
+
+    &:hover{
+        background-color: white;
+        color: $button-red-color;
+    }
 }
 

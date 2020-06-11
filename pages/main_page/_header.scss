@@ -40,6 +40,10 @@ header{
             padding: .5em 0;
 
             background-color: $button-red-color;
+
+            &:focus{
+
+            }
         }  
     }
     .kl-logo{
@@ -61,10 +65,15 @@ header{
             font-weight: 600;
             z-index: 1;
 
+            text-shadow: 3px 3px 4px rgba($color: black, $alpha: .87);
+
             a:hover{
                 padding: 2px 8px;
                 filter: invert(1);
                 background-color: black;
+            }
+            .kl-logo-ul{
+                width: 10em;
             }
         }
     }
