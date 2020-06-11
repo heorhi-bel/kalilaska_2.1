@@ -4,229 +4,138 @@ header{
     overflow: hidden;
     position: relative;
 
-.kl-logo{
-    display: none;
-}
+    background-image: url(/makets/MENU\ PAGE/MENU\ PAGE\ BURGER.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 60%;
 
-.navbar{
-    list-style-type: none;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    padding: 1vw 0 0 10vw;
+    h2{
+        display: block;
+        position: absolute;
+        width: 2em;
+        height: 2em;
+        top: 40%;
+        left: 45%;
 
-    li{
-        font-size: 1.5em;
-        font-weight: 600;
-        z-index: 1;
+        font-size: 64px;
+        text-shadow: 4px 4px 5px rgba($color: #000000, $alpha: .87);
+    }
+    
+    .menu-high-navbar { 
+        width: auto;
+        height: auto;
+        margin: 0;
+        background-color: rgba($color: $main-black, $alpha: .87);
 
-        text-shadow: 3px 3px 4px rgba($color: black, $alpha: .87);
-
-        a:hover{
-            padding: 2px 8px;
-            filter: invert(1);
-            background-color: black;
-        }
+        .navbar{
+            list-style-type: none;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            align-items: center;
+            padding: 1em 0 0 10vw;
+            margin: 0;
         
+            li{
+                font-size: 1.5em;
+                font-weight: 600;
+                z-index: 1;
         
-        .kl-logo-ul{
-            width:5em;
-            filter: invert(1);
-
-            &:hover{
-                filter: invert(1);
-                background-color: rgba($color: #000000, $alpha: 0);
+                text-shadow: 3px 3px 4px rgba($color: black, $alpha: .87);
+        
+                a:hover{
+                    padding: 2px 8px;
+                    filter: invert(1);
+                    background-color: black;
+                }
+                
+                .kl-logo-ul{
+                    width:5em;
+                    filter: invert(1);
+        
+                    &:hover{
+                        filter: invert(1);
+                        background-color: rgba($color: #000000, $alpha: 0);
+                    }
+                }
+                .photo-href{
+                    filter: none;
+                    background-color: rgba($color: #000000, $alpha: 0);
+                
+                    &:hover{
+                        filter: none;
+                        background-color: rgba($color: #000000, $alpha: 0);
+                    }
+                    &:focus{
+                        border: none;
+                    }
+                }
             }
-        }
-        .photo-href{
-            filter: none;
-            background-color: rgba($color: #000000, $alpha: 0);
-        
-            &:hover{
-                filter: none;
-                background-color: rgba($color: #000000, $alpha: 0);
-            }
-        }
+         
     }
 }
 
 
 
 @media screen and (max-width: 980px) and (min-width: 769px){
-    height: 50em;
+    height: 40em;
+    background-size: 120%;
+    background-position-x: center;
+    background-position-y: 60%;
 
     .navbar{
-        li{
-            font-size: 2vw;
+        a{
+            font-size: 20px;
             
             img{
-                width: 15vw;
+                width: 5em;
             }
         }
     }
 }
 
 @media screen and (max-width: 768px) and (min-width: 500px){
-    height: 46em;
+    height: 33em;
+    background-size: 130vw;
+    background-position-x: center;
+    background-position-y: 60%;
 
-    .high-bar{
-        background-color: rgba($color: #444444, $alpha: 0);
-        height: auto;
-        padding: 0;
+    .menu-high-navbar { 
 
-        .icon-location{
-            width: 28px;
-            height: 28px;
-            top: 19px;
-            left: 26px;
-        }
-        h4{
-            top: -10px;
-            left: 55px;
-            font-size: 1.4em;
-        }
-        a{
-            top: 15px;
-            right: 30px;
-            width: 8em;
-            padding: .7em 0;
-        }
-    }
-    .kl-logo{
-        display: block;
-        position: absolute;
-        width: 8em;
-        top: 2.5em;
-        left: 41%;
-    }
-    .option-icon{
-        display: block;
-        position: fixed;
-        top: 65px;
-        right: 30px;
-        width: 2.4em;
-
-        filter: invert(1);
-        z-index: 2;
-    }
-
-    .navbar{
-        display: none;
-        transition: .4s ease-in;
-
-        li{
-            font-size: 1.7vw;
-            
-            img{
-                display: none;
-                width: 15vw;
+        .navbar{
+        
+            li{
+                font-size: 1em;
+                font-weight: 400;
+                
+                .kl-logo-ul{
+                    width:6em;
+                }
             }
-        }
-    }
-    .navbar-open{
-        display: none;
-        flex-flow: column nowrap;
-        align-items: center;
-        justify-content: flex-start;
-        position: fixed;
-        top: 0;
-        right: 0;
-        height: 100%;
-        width: 0; //13em
-        margin: 0;
-        padding: 7em 0 0 0;
-
-        background-color: rgba($color: $main-black, $alpha: .87);
-        z-index: 1;
-
-        li{
-            font-size: 1.5em;
-            line-height: 5em;
-            
-            img{    display: none;  }
-        }
+        } 
     }
 }
 
 @media screen and (max-width: 499px){
-    height: 35em;
+    height: 20em;
+    background-size: 40em;
+    background-position-x: center;
+    background-position-y: 60%;
 
-    .high-bar{
-        background-color: rgba($color: #444444, $alpha: 0);
-        height: auto;
-        padding: 0;
-
-        .icon-location{
-            width: 25px;
-            height: 25px;
-            top: 15px;
-            left: 26px;
-        }
-        h4{
-            top: -5px;
-            left: 55px;
-            font-size: 1.1em;
-        }
-        a{
-            top: 16px;
-            right: 30px;
-            width: 8em;
-            padding: .4em 0;
-            font-size: .85em;
-        }
-    }
-    .kl-logo{
-        display: block;
-        position: absolute;
-        width: 8em;
-        top: 3.5em;
-        left: 35vw;
-    }
-    .option-icon{
-        display: block;
-        position: fixed;
-        top: 65px;
-        right: 5vw;
-        width: 2.2em;
-
-        filter: invert(1);
-        z-index: 2;
-    }
-
-    .navbar{
-        display: none;
-        li{
-            font-size: 1.7vw;
-            
-            img{
-                display: none;
-                width: 15vw;
+    .menu-high-navbar { 
+        padding-left: 0;
+        .navbar{
+        
+            li{
+                font-size: 3.1vw;
+                font-weight: 300;
+                
+                .kl-logo-ul{
+                    width:4.5em;
+                }
             }
-        }
-    }
-    .navbar-open{
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-        justify-content: flex-start;
-        position: fixed;
-        top: 0;
-        right: 0;
-        height: 100%;
-        width: 13em;
-        margin: 0;
-        padding: 7em 0 0 0;
-
-        background-color: rgba($color: $main-black, $alpha: .87);
-        z-index: 1;
-
-        li{
-            font-size: 1.35em;
-            line-height: 3em;
-            transition: .3s ease-in;
-            
-            img{    display: none;  }
-        }
+        } 
     }
 }
 }

@@ -17,199 +17,104 @@ header {
   width: 100%;
   height: 50em;
   overflow: hidden;
-  position: relative; }
-  header .kl-logo {
-    display: none; }
-  header .navbar {
-    list-style-type: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    padding: 1vw 0 0 10vw; }
-    header .navbar li {
-      font-size: 1.5em;
-      font-weight: 600;
-      z-index: 1;
-      text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.87); }
-      header .navbar li a:hover {
-        padding: 2px 8px;
-        -webkit-filter: invert(1);
-                filter: invert(1);
-        background-color: black; }
-      header .navbar li .kl-logo-ul {
-        width: 5em;
-        -webkit-filter: invert(1);
-                filter: invert(1); }
-        header .navbar li .kl-logo-ul:hover {
+  position: relative;
+  background-image: url(/makets/MENU\ PAGE/MENU\ PAGE\ BURGER.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: 60%; }
+  header h2 {
+    display: block;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    top: 40%;
+    left: 45%;
+    font-size: 64px;
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.87); }
+  header .menu-high-navbar {
+    width: auto;
+    height: auto;
+    margin: 0;
+    background-color: rgba(17, 17, 17, 0.87); }
+    header .menu-high-navbar .navbar {
+      list-style-type: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 1em 0 0 10vw;
+      margin: 0; }
+      header .menu-high-navbar .navbar li {
+        font-size: 1.5em;
+        font-weight: 600;
+        z-index: 1;
+        text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.87); }
+        header .menu-high-navbar .navbar li a:hover {
+          padding: 2px 8px;
           -webkit-filter: invert(1);
                   filter: invert(1);
-          background-color: rgba(0, 0, 0, 0); }
-      header .navbar li .photo-href {
-        -webkit-filter: none;
-                filter: none;
-        background-color: rgba(0, 0, 0, 0); }
-        header .navbar li .photo-href:hover {
+          background-color: black; }
+        header .menu-high-navbar .navbar li .kl-logo-ul {
+          width: 5em;
+          -webkit-filter: invert(1);
+                  filter: invert(1); }
+          header .menu-high-navbar .navbar li .kl-logo-ul:hover {
+            -webkit-filter: invert(1);
+                    filter: invert(1);
+            background-color: rgba(0, 0, 0, 0); }
+        header .menu-high-navbar .navbar li .photo-href {
           -webkit-filter: none;
                   filter: none;
           background-color: rgba(0, 0, 0, 0); }
+          header .menu-high-navbar .navbar li .photo-href:hover {
+            -webkit-filter: none;
+                    filter: none;
+            background-color: rgba(0, 0, 0, 0); }
+          header .menu-high-navbar .navbar li .photo-href:focus {
+            border: none; }
   @media screen and (max-width: 980px) and (min-width: 769px) {
     header {
-      height: 50em; }
-      header .navbar li {
-        font-size: 2vw; }
-        header .navbar li img {
-          width: 15vw; } }
+      height: 40em;
+      background-size: 120%;
+      background-position-x: center;
+      background-position-y: 60%; }
+      header .navbar a {
+        font-size: 20px; }
+        header .navbar a img {
+          width: 5em; } }
   @media screen and (max-width: 768px) and (min-width: 500px) {
     header {
-      height: 46em; }
-      header .high-bar {
-        background-color: rgba(68, 68, 68, 0);
-        height: auto;
-        padding: 0; }
-        header .high-bar .icon-location {
-          width: 28px;
-          height: 28px;
-          top: 19px;
-          left: 26px; }
-        header .high-bar h4 {
-          top: -10px;
-          left: 55px;
-          font-size: 1.4em; }
-        header .high-bar a {
-          top: 15px;
-          right: 30px;
-          width: 8em;
-          padding: .7em 0; }
-      header .kl-logo {
-        display: block;
-        position: absolute;
-        width: 8em;
-        top: 2.5em;
-        left: 41%; }
-      header .option-icon {
-        display: block;
-        position: fixed;
-        top: 65px;
-        right: 30px;
-        width: 2.4em;
-        -webkit-filter: invert(1);
-                filter: invert(1);
-        z-index: 2; }
-      header .navbar {
-        display: none;
-        -webkit-transition: .4s ease-in;
-        transition: .4s ease-in; }
-        header .navbar li {
-          font-size: 1.7vw; }
-          header .navbar li img {
-            display: none;
-            width: 15vw; }
-      header .navbar-open {
-        display: none;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-flow: column nowrap;
-                flex-flow: column nowrap;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: start;
-            -ms-flex-pack: start;
-                justify-content: flex-start;
-        position: fixed;
-        top: 0;
-        right: 0;
-        height: 100%;
-        width: 0;
-        margin: 0;
-        padding: 7em 0 0 0;
-        background-color: rgba(17, 17, 17, 0.87);
-        z-index: 1; }
-        header .navbar-open li {
-          font-size: 1.5em;
-          line-height: 5em; }
-          header .navbar-open li img {
-            display: none; } }
+      height: 33em;
+      background-size: 130vw;
+      background-position-x: center;
+      background-position-y: 60%; }
+      header .menu-high-navbar .navbar li {
+        font-size: 1em;
+        font-weight: 400; }
+        header .menu-high-navbar .navbar li .kl-logo-ul {
+          width: 6em; } }
   @media screen and (max-width: 499px) {
     header {
-      height: 35em; }
-      header .high-bar {
-        background-color: rgba(68, 68, 68, 0);
-        height: auto;
-        padding: 0; }
-        header .high-bar .icon-location {
-          width: 25px;
-          height: 25px;
-          top: 15px;
-          left: 26px; }
-        header .high-bar h4 {
-          top: -5px;
-          left: 55px;
-          font-size: 1.1em; }
-        header .high-bar a {
-          top: 16px;
-          right: 30px;
-          width: 8em;
-          padding: .4em 0;
-          font-size: .85em; }
-      header .kl-logo {
-        display: block;
-        position: absolute;
-        width: 8em;
-        top: 3.5em;
-        left: 35vw; }
-      header .option-icon {
-        display: block;
-        position: fixed;
-        top: 65px;
-        right: 5vw;
-        width: 2.2em;
-        -webkit-filter: invert(1);
-                filter: invert(1);
-        z-index: 2; }
-      header .navbar {
-        display: none; }
-        header .navbar li {
-          font-size: 1.7vw; }
-          header .navbar li img {
-            display: none;
-            width: 15vw; }
-      header .navbar-open {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-flow: column nowrap;
-                flex-flow: column nowrap;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: start;
-            -ms-flex-pack: start;
-                justify-content: flex-start;
-        position: fixed;
-        top: 0;
-        right: 0;
-        height: 100%;
-        width: 13em;
-        margin: 0;
-        padding: 7em 0 0 0;
-        background-color: rgba(17, 17, 17, 0.87);
-        z-index: 1; }
-        header .navbar-open li {
-          font-size: 1.35em;
-          line-height: 3em;
-          -webkit-transition: .3s ease-in;
-          transition: .3s ease-in; }
-          header .navbar-open li img {
-            display: none; } }
+      height: 20em;
+      background-size: 40em;
+      background-position-x: center;
+      background-position-y: 60%; }
+      header .menu-high-navbar {
+        padding-left: 0; }
+        header .menu-high-navbar .navbar li {
+          font-size: 3.1vw;
+          font-weight: 300; }
+          header .menu-high-navbar .navbar li .kl-logo-ul {
+            width: 4.5em; } }
 
 footer {
   width: inherit;
