@@ -20,7 +20,7 @@ header {
   position: relative;
   background-image: url(/makets/MENU\ PAGE/MENU\ PAGE\ BURGER.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   background-position-x: center;
   background-position-y: 60%; }
   header h2 {
@@ -29,7 +29,7 @@ header {
     width: 2em;
     height: 2em;
     top: 40%;
-    left: 45%;
+    left: 43%;
     font-size: 64px;
     text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.87); }
   header .menu-high-navbar {
@@ -81,12 +81,20 @@ header {
             background-color: rgba(0, 0, 0, 0); }
           header .menu-high-navbar .navbar li .photo-href:focus {
             border: none; }
+        header .menu-high-navbar .navbar li .actual-page {
+          border-top: 1px solid white; }
   @media screen and (max-width: 980px) and (min-width: 769px) {
     header {
       height: 40em;
       background-size: 120%;
       background-position-x: center;
       background-position-y: 60%; }
+      header h2 {
+        width: auto;
+        height: auto;
+        top: 35%;
+        left: 40%;
+        font-size: 64px; }
       header .navbar a {
         font-size: 20px; }
         header .navbar a img {
@@ -97,6 +105,12 @@ header {
       background-size: 130vw;
       background-position-x: center;
       background-position-y: 60%; }
+      header h2 {
+        width: auto;
+        height: auto;
+        top: 35%;
+        left: 40%;
+        font-size: 48px; }
       header .menu-high-navbar .navbar li {
         font-size: 1em;
         font-weight: 400; }
@@ -108,6 +122,12 @@ header {
       background-size: 40em;
       background-position-x: center;
       background-position-y: 60%; }
+      header h2 {
+        width: auto;
+        height: auto;
+        top: 30%;
+        left: 40%;
+        font-size: 32px; }
       header .menu-high-navbar {
         padding-left: 0; }
         header .menu-high-navbar .navbar li {
@@ -383,5 +403,86 @@ body {
 .red-button:hover {
   background-color: white;
   color: #AF1717; }
+
+main {
+  width: inherit;
+  height: auto; }
+  main .menu-main-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-row-gap: 80px;
+    grid-column-gap: 30px;
+    padding: 10em 10vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    main .menu-main-grid-container .grid--section {
+      width: auto;
+      height: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column wrap;
+              flex-flow: column wrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-transition: .1s;
+      transition: .1s; }
+      main .menu-main-grid-container .grid--section .menu-main-grid-container--photo {
+        width: 300px;
+        height: 300px; }
+        main .menu-main-grid-container .grid--section .menu-main-grid-container--photo div {
+          width: 300px;
+          height: 300px;
+          background-image: url(/makets/MENU\ PAGE/MENU_3.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center;
+          -webkit-transition: .15s ease-in;
+          transition: .15s ease-in; }
+      main .menu-main-grid-container .grid--section .text-link {
+        color: #111111;
+        font-size: 22px; }
+      main .menu-main-grid-container .grid--section:hover {
+        -webkit-transform: scale(1.01);
+                transform: scale(1.01);
+        -webkit-transition: .1s ease-in;
+        transition: .1s ease-in; }
+  @media screen and (max-width: 980px) and (min-width: 769px) {
+    main .menu-main-grid-container {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-row-gap: 60px;
+      grid-column-gap: 20px;
+      padding: 10em 8vw; }
+      main .menu-main-grid-container .grid--section .menu-main-grid-container--photo {
+        width: 200px;
+        height: 200px; }
+        main .menu-main-grid-container .grid--section .menu-main-grid-container--photo div {
+          width: 200px;
+          height: 200px; } }
+  @media screen and (max-width: 768px) and (min-width: 500px) {
+    main .menu-main-grid-container {
+      grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+      grid-row-gap: 45px;
+      grid-column-gap: 15px;
+      padding: 10em 5%; }
+      main .menu-main-grid-container .grid--section .menu-main-grid-container--photo {
+        width: 10em;
+        height: 10em; }
+        main .menu-main-grid-container .grid--section .menu-main-grid-container--photo div {
+          width: 10em;
+          height: 10em; }
+      main .menu-main-grid-container .grid--section .text-link {
+        color: #111111;
+        font-size: 18px; } }
 
 /*# sourceMappingURL=menu.css.map */

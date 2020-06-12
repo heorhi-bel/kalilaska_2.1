@@ -36,3 +36,109 @@ body {
         color: $button-red-color;
     }
 }
+
+
+main{
+    width: inherit;
+    height: auto;
+
+    .menu-main-grid-container{
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(300px, 1fr));
+        grid-row-gap: 80px;
+        grid-column-gap: 30px;
+        padding: 10em 10vw;
+        justify-content: center;
+        align-items: center;
+
+        .grid--section{
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: center;
+            transition: .1s;
+
+            .menu-main-grid-container--photo{
+                width: 300px;
+                height: 300px;
+                
+                div{
+                    width: 300px;
+                    height: 300px;
+
+                    background-image: url(/makets/MENU\ PAGE/MENU_3.jpg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    transition: .15s ease-in;
+                }    
+            }
+
+            .text-link{
+                 color: $main-black;
+                 font-size: 22px;
+            }
+
+            &:hover{
+                transform: scale(1.01);
+                transition: .1s ease-in;
+            }
+        }
+    }
+
+    @media screen and (max-width: 980px) and (min-width: 769px){
+
+        .menu-main-grid-container{
+            grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
+            grid-row-gap: 60px;
+            grid-column-gap: 20px;
+            padding: 10em 8vw;
+    
+            .grid--section{
+    
+                .menu-main-grid-container--photo{
+                    width: 200px;
+                    height: 200px;
+                    
+                    div{
+                        width: 200px;
+                        height: 200px;
+                    }    
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) and (min-width: 500px){
+
+        .menu-main-grid-container{
+            grid-template-columns: repeat( auto-fit, minmax(10em, 1fr));
+            grid-row-gap: 45px;
+            grid-column-gap: 15px;
+            padding: 10em 5%;
+    
+            .grid--section{
+    
+                .menu-main-grid-container--photo{
+                    width: 10em;
+                    height: 10em;
+                    
+                    div{
+                        width: 10em;
+                        height: 10em;
+                    }    
+                }
+                .text-link{
+                    color: $main-black;
+                    font-size: 18px;
+               }
+            }
+        }
+    }
+
+    @media screen and (max-width: 499px){
+
+    }
+}
