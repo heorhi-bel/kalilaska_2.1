@@ -202,20 +202,24 @@ footer {
       footer .footer-div-container .subscribe-div h4 {
         font-size: 20px;
         font-weight: 500; }
-      footer .footer-div-container .subscribe-div img {
-        width: 3.5em;
-        -webkit-filter: invert(1);
-                filter: invert(1);
-        border-radius: 30px;
-        -webkit-transition-duration: .5s;
-                transition-duration: .5s; }
-        footer .footer-div-container .subscribe-div img:hover {
-          -webkit-filter: invert(0);
-                  filter: invert(0);
-          background-color: white;
-          padding: 7px;
-          -webkit-transition: .4s;
-          transition: .4s; }
+      footer .footer-div-container .subscribe-div .button-insta {
+        border: none;
+        background-color: rgba(0, 0, 0, 0);
+        padding: 0; }
+        footer .footer-div-container .subscribe-div .button-insta img {
+          width: 2.5em;
+          -webkit-filter: invert(1);
+                  filter: invert(1);
+          border-radius: 30px;
+          -webkit-transition-duration: .5s;
+                  transition-duration: .5s; }
+          footer .footer-div-container .subscribe-div .button-insta img:hover {
+            -webkit-filter: invert(0);
+                    filter: invert(0);
+            background-color: white;
+            padding: 7px;
+            -webkit-transition: .4s;
+            transition: .4s; }
     footer .footer-div-container a {
       font-size: 22px;
       font-weight: 300;
@@ -303,8 +307,12 @@ footer {
         padding: 0; }
         footer .footer-div-container .subscribe-div h4 {
           font-size: 18px; }
-        footer .footer-div-container .subscribe-div img {
-          width: 2.8em; }
+        footer .footer-div-container .subscribe-div .button-insta {
+          -webkit-box-ordinal-group: 2;
+              -ms-flex-order: 1;
+                  order: 1; }
+          footer .footer-div-container .subscribe-div .button-insta img {
+            width: 2.8em; }
         footer .footer-div-container a {
           font-size: 20px;
           margin: 1.5em 0;
@@ -357,8 +365,12 @@ footer {
         footer .footer-div-container .subscribe-div h4 {
           font-size: 18px;
           text-align: center; }
-        footer .footer-div-container .subscribe-div img {
-          width: 2em; }
+        footer .footer-div-container .subscribe-div .button-insta {
+          -webkit-box-ordinal-group: 2;
+              -ms-flex-order: 1;
+                  order: 1; }
+          footer .footer-div-container .subscribe-div .button-insta img {
+            width: 2em; }
         footer .footer-div-container a {
           font-size: 20px;
           margin: 1.5em 0;
@@ -409,7 +421,7 @@ main {
   height: auto; }
   main .menu-main-grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-row-gap: 80px;
     grid-column-gap: 30px;
     padding: 10em 10vw;
@@ -438,10 +450,10 @@ main {
       -webkit-transition: .1s;
       transition: .1s; }
       main .menu-main-grid-container .grid--section .menu-main-grid-container--photo {
-        width: 300px;
+        width: 350px;
         height: 300px; }
         main .menu-main-grid-container .grid--section .menu-main-grid-container--photo div {
-          width: 300px;
+          width: 350px;
           height: 300px;
           background-image: url(/makets/MENU\ PAGE/MENU_3.jpg);
           background-size: cover;
@@ -459,28 +471,43 @@ main {
         transition: .1s ease-in; }
   @media screen and (max-width: 980px) and (min-width: 769px) {
     main .menu-main-grid-container {
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       grid-row-gap: 60px;
       grid-column-gap: 20px;
       padding: 10em 8vw; }
       main .menu-main-grid-container .grid--section .menu-main-grid-container--photo {
-        width: 200px;
+        width: 240px;
         height: 200px; }
         main .menu-main-grid-container .grid--section .menu-main-grid-container--photo div {
-          width: 200px;
+          width: 240px;
           height: 200px; } }
   @media screen and (max-width: 768px) and (min-width: 500px) {
     main .menu-main-grid-container {
-      grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(12.5em, 1fr));
       grid-row-gap: 45px;
       grid-column-gap: 15px;
       padding: 10em 5%; }
       main .menu-main-grid-container .grid--section .menu-main-grid-container--photo {
-        width: 10em;
+        width: 12.5em;
         height: 10em; }
         main .menu-main-grid-container .grid--section .menu-main-grid-container--photo div {
-          width: 10em;
+          width: 12.5em;
           height: 10em; }
+      main .menu-main-grid-container .grid--section .text-link {
+        color: #111111;
+        font-size: 18px; } }
+  @media screen and (max-width: 499px) {
+    main .menu-main-grid-container {
+      grid-template-columns: repeat(auto-fit, minmax(65vw, 1fr));
+      grid-row-gap: 45px;
+      grid-column-gap: 15px;
+      padding: 5em 5%; }
+      main .menu-main-grid-container .grid--section .menu-main-grid-container--photo {
+        width: 65vw;
+        height: 45vw; }
+        main .menu-main-grid-container .grid--section .menu-main-grid-container--photo div {
+          width: 65vw;
+          height: 45vw; }
       main .menu-main-grid-container .grid--section .text-link {
         color: #111111;
         font-size: 18px; } }

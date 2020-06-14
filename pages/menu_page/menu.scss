@@ -44,7 +44,7 @@ main{
 
     .menu-main-grid-container{
         display: grid;
-        grid-template-columns: repeat( auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat( auto-fit, minmax(350px, 1fr));
         grid-row-gap: 80px;
         grid-column-gap: 30px;
         padding: 10em 10vw;
@@ -61,11 +61,11 @@ main{
             transition: .1s;
 
             .menu-main-grid-container--photo{
-                width: 300px;
+                width: 350px;
                 height: 300px;
                 
                 div{
-                    width: 300px;
+                    width: 350px;
                     height: 300px;
 
                     background-image: url(/makets/MENU\ PAGE/MENU_3.jpg);
@@ -91,7 +91,7 @@ main{
     @media screen and (max-width: 980px) and (min-width: 769px){
 
         .menu-main-grid-container{
-            grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat( auto-fit, minmax(240px, 1fr));
             grid-row-gap: 60px;
             grid-column-gap: 20px;
             padding: 10em 8vw;
@@ -99,11 +99,11 @@ main{
             .grid--section{
     
                 .menu-main-grid-container--photo{
-                    width: 200px;
+                    width: 240px;
                     height: 200px;
                     
                     div{
-                        width: 200px;
+                        width: 240px;
                         height: 200px;
                     }    
                 }
@@ -114,7 +114,7 @@ main{
     @media screen and (max-width: 768px) and (min-width: 500px){
 
         .menu-main-grid-container{
-            grid-template-columns: repeat( auto-fit, minmax(10em, 1fr));
+            grid-template-columns: repeat( auto-fit, minmax(12.5em, 1fr));
             grid-row-gap: 45px;
             grid-column-gap: 15px;
             padding: 10em 5%;
@@ -122,11 +122,11 @@ main{
             .grid--section{
     
                 .menu-main-grid-container--photo{
-                    width: 10em;
+                    width: 12.5em;
                     height: 10em;
                     
                     div{
-                        width: 10em;
+                        width: 12.5em;
                         height: 10em;
                     }    
                 }
@@ -140,5 +140,28 @@ main{
 
     @media screen and (max-width: 499px){
 
+        .menu-main-grid-container{
+            grid-template-columns: repeat( auto-fit, minmax(65vw, 1fr));
+            grid-row-gap: 45px;
+            grid-column-gap: 15px;
+            padding: 5em 5%;
+    
+            .grid--section{
+    
+                .menu-main-grid-container--photo{
+                    width: 65vw;
+                    height: 45vw;
+                    
+                    div{
+                        width: 65vw;
+                        height: 45vw;
+                    }    
+                }
+                .text-link{
+                    color: $main-black;
+                    font-size: 18px;
+               }
+            }
+        }
     }
 }

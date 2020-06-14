@@ -778,20 +778,24 @@ footer {
       footer .footer-div-container .subscribe-div h4 {
         font-size: 20px;
         font-weight: 500; }
-      footer .footer-div-container .subscribe-div img {
-        width: 3.5em;
-        -webkit-filter: invert(1);
-                filter: invert(1);
-        border-radius: 30px;
-        -webkit-transition-duration: .5s;
-                transition-duration: .5s; }
-        footer .footer-div-container .subscribe-div img:hover {
-          -webkit-filter: invert(0);
-                  filter: invert(0);
-          background-color: white;
-          padding: 7px;
-          -webkit-transition: .4s;
-          transition: .4s; }
+      footer .footer-div-container .subscribe-div .button-insta {
+        border: none;
+        background-color: rgba(0, 0, 0, 0);
+        padding: 0; }
+        footer .footer-div-container .subscribe-div .button-insta img {
+          width: 2.5em;
+          -webkit-filter: invert(1);
+                  filter: invert(1);
+          border-radius: 30px;
+          -webkit-transition-duration: .5s;
+                  transition-duration: .5s; }
+          footer .footer-div-container .subscribe-div .button-insta img:hover {
+            -webkit-filter: invert(0);
+                    filter: invert(0);
+            background-color: white;
+            padding: 7px;
+            -webkit-transition: .4s;
+            transition: .4s; }
     footer .footer-div-container a {
       font-size: 22px;
       font-weight: 300;
@@ -879,8 +883,12 @@ footer {
         padding: 0; }
         footer .footer-div-container .subscribe-div h4 {
           font-size: 18px; }
-        footer .footer-div-container .subscribe-div img {
-          width: 2.8em; }
+        footer .footer-div-container .subscribe-div .button-insta {
+          -webkit-box-ordinal-group: 2;
+              -ms-flex-order: 1;
+                  order: 1; }
+          footer .footer-div-container .subscribe-div .button-insta img {
+            width: 2.8em; }
         footer .footer-div-container a {
           font-size: 20px;
           margin: 1.5em 0;
@@ -933,8 +941,12 @@ footer {
         footer .footer-div-container .subscribe-div h4 {
           font-size: 18px;
           text-align: center; }
-        footer .footer-div-container .subscribe-div img {
-          width: 2em; }
+        footer .footer-div-container .subscribe-div .button-insta {
+          -webkit-box-ordinal-group: 2;
+              -ms-flex-order: 1;
+                  order: 1; }
+          footer .footer-div-container .subscribe-div .button-insta img {
+            width: 2em; }
         footer .footer-div-container a {
           font-size: 20px;
           margin: 1.5em 0;

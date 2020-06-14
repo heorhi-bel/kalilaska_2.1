@@ -1,0 +1,170 @@
+header{
+    width: 100%;
+    height: 50em;
+    overflow: hidden;
+    position: relative;
+
+    background-image: url(/makets/MENU\ PAGE/MENU\ PAGE\ BURGER.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: center;
+    background-position-y: 60%;
+
+    h2{
+        display: block;
+        position: absolute;
+        width: 2em;
+        height: 2em;
+        top: 40%;
+        left: 43%;
+
+        font-size: 64px;
+        text-shadow: 4px 4px 5px rgba($color: #000000, $alpha: .87);
+    }
+    
+    .menu-high-navbar { 
+        width: auto;
+        height: auto;
+        margin: 0;
+        background-color: rgba($color: $main-black, $alpha: .87);
+
+        .navbar{
+            list-style-type: none;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            align-items: center;
+            padding: 1em 0 0 10vw;
+            margin: 0;
+        
+            li{
+                font-size: 1.5em;
+                font-weight: 600;
+                z-index: 1;
+        
+                text-shadow: 3px 3px 4px rgba($color: black, $alpha: .87);
+        
+                a:hover{
+                    padding: 2px 8px;
+                    filter: invert(1);
+                    background-color: black;
+                }
+                
+                .kl-logo-ul{
+                    width:5em;
+                    filter: invert(1);
+        
+                    &:hover{
+                        filter: invert(1);
+                        background-color: rgba($color: #000000, $alpha: 0);
+                    }
+                }
+                .photo-href{
+                    filter: none;
+                    background-color: rgba($color: #000000, $alpha: 0);
+                
+                    &:hover{
+                        filter: none;
+                        background-color: rgba($color: #000000, $alpha: 0);
+                    }
+                    &:focus{
+                        border: none;
+                    }
+                }
+                .actual-page{
+                    border-top: 1px solid white;
+                }
+            }
+         
+    }
+}
+
+
+
+@media screen and (max-width: 980px) and (min-width: 769px){
+    height: 40em;
+    background-size: 120%;
+    background-position-x: center;
+    background-position-y: 60%;
+
+    h2{
+        width: auto;
+        height: auto;
+        top: 35%;
+        left: 40%;
+
+        font-size: 64px;
+    }
+    .navbar{
+        a{
+            font-size: 20px;
+            
+            img{
+                width: 5em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 500px){
+    height: 33em;
+    background-size: 130vw;
+    background-position-x: center;
+    background-position-y: 60%;
+
+    h2{
+        width: auto;
+        height: auto;
+        top: 35%;
+        left: 40%;
+
+        font-size: 48px;
+    }
+
+    .menu-high-navbar { 
+
+        .navbar{
+        
+            li{
+                font-size: 1em;
+                font-weight: 400;
+                
+                .kl-logo-ul{
+                    width:6em;
+                }
+            }
+        } 
+    }
+}
+
+@media screen and (max-width: 499px){
+    height: 20em;
+    background-size: 40em;
+    background-position-x: center;
+    background-position-y: 60%;
+
+    h2{
+        width: auto;
+        height: auto;
+        top: 30%;
+        left: 40%;
+
+        font-size: 32px;
+    }
+
+    .menu-high-navbar { 
+        padding-left: 0;
+        .navbar{
+        
+            li{
+                font-size: 3.1vw;
+                font-weight: 300;
+                
+                .kl-logo-ul{
+                    width:4.5em;
+                }
+            }
+        } 
+    }
+}
+}
