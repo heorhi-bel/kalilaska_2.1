@@ -1,0 +1,184 @@
+@import '_mixins';
+@import '_header';
+@import '_footer';
+
+*{
+    a{
+        text-decoration: none;
+        color: white;
+        transition: .4s;
+        
+        &:focus{
+            outline: none;
+            border: 2px solid white; 
+        }
+        &:hover{
+            transition: .3s ease-in;
+        }
+    }
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: whitesmoke;
+    color: white;
+    // overflow-x: hidden;
+}
+
+.logo-invert{
+    filter: invert(1);
+}
+
+.red-button{
+
+    &:hover{
+        background-color: white;
+        color: $button-red-color;
+    }
+}
+
+main{
+    width: inherit;
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 5em 0;
+
+    color: black;
+
+    .dishes-set{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        margin: 2em 0;
+
+        h1{
+            font-size: 48px;
+        }
+        img{
+            width: 4em;
+        }
+
+        .set--section{
+            width: 55em;
+            margin: .5em 0;
+
+            .dish-name{
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                align-items: flex-start;
+
+                border-bottom: 1px solid black;
+
+                h4{
+                    font-size: 18px;
+                    margin-bottom: 5px;
+                }
+            }
+            .dish-ingridients{
+                width: 25em;
+                font-size: 14px;
+            }
+        }
+    }
+
+    //-------------->> screens
+    @media screen and (max-width: 980px) and (min-width: 769px){
+
+        .dishes-set{
+    
+            h1{
+                font-size: 46px;
+            }
+            img{
+                width: 3.7em;
+            }
+    
+            .set--section{
+                width: 40em;
+                margin: .5em 0;
+    
+                .dish-name{
+    
+                    h4{
+                        font-size: 18px;
+                        margin-bottom: 5px;
+                    }
+                }
+                .dish-ingridients{
+                    width: 25em;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 768px) and (min-width: 500px){
+        padding: 2em 0;
+
+        .dishes-set{
+            margin: .5em 0;
+
+            h1{
+                font-size: 42px;
+            }
+            img{
+                width: 3em;
+            }
+    
+            .set--section{
+                width: 80vw;
+                margin: .7em 0;
+    
+                .dish-name{
+    
+                    h4{
+                        font-size: 20px;
+                        margin-top: 0;
+                        margin-bottom: 5px;
+                    }
+                }
+                .dish-ingridients{
+                    width: 20em;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 499px){
+        padding: 1em 0 .5em 0;
+
+        .dishes-set{
+            margin: .5em 0;
+
+            h1{
+                font-size: 32px;
+                margin-bottom: .2em;
+            }
+            img{
+                width: 1.5em;
+            }
+    
+            .set--section{
+                width: 80vw;
+                margin: .7em 0;
+    
+                .dish-name{
+    
+                    h4{
+                        font-size: 15px;
+                        margin-top: 0;
+                        margin-bottom: 5px;
+                    }
+                }
+                .dish-ingridients{
+                    width: 50vw;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
