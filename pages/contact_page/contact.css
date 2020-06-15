@@ -20,17 +20,24 @@ header {
   position: relative;
   background-image: url(/makets/CONTACT\ PAGE/CONTACT_PAGE_BURGER.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position-x: center;
-  background-position-y: 60%; }
-  header h2 {
-    display: block;
-    position: absolute;
-    width: 2em;
-    height: 2em;
-    top: 40%;
-    left: 43%;
-    font-size: 64px;
+  background-size: 120%; }
+  header span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    width: auto;
+    height: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 4.5em;
+    text-align: center;
+    font-size: 56px;
+    font-weight: 500;
     text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.87); }
   header .menu-high-navbar {
     width: auto;
@@ -89,28 +96,20 @@ header {
       background-size: 120%;
       background-position-x: center;
       background-position-y: 60%; }
-      header h2 {
-        width: auto;
-        height: auto;
-        top: 35%;
-        left: 40%;
-        font-size: 64px; }
+      header span {
+        font-size: 48px; }
       header .navbar a {
         font-size: 20px; }
         header .navbar a img {
           width: 5em; } }
   @media screen and (max-width: 768px) and (min-width: 500px) {
     header {
-      height: 33em;
+      height: 28em;
       background-size: 130vw;
       background-position-x: center;
       background-position-y: 60%; }
-      header h2 {
-        width: auto;
-        height: auto;
-        top: 35%;
-        left: 40%;
-        font-size: 48px; }
+      header span {
+        font-size: 44px; }
       header .menu-high-navbar .navbar li {
         font-size: 1em;
         font-weight: 400; }
@@ -122,12 +121,10 @@ header {
       background-size: 40em;
       background-position-x: center;
       background-position-y: 60%; }
-      header h2 {
-        width: auto;
-        height: auto;
-        top: 30%;
-        left: 40%;
-        font-size: 32px; }
+      header span {
+        font-size: 32px;
+        padding-right: 1em;
+        padding-left: 1em; }
       header .menu-high-navbar {
         padding-left: 0; }
         header .menu-high-navbar .navbar li {
@@ -415,5 +412,8 @@ body {
 .red-button:hover {
   background-color: white;
   color: #AF1717; }
+
+main {
+  color: #111111; }
 
 /*# sourceMappingURL=contact.css.map */
