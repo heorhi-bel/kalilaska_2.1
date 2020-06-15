@@ -20,7 +20,7 @@
 
 body {
     font-family: 'Oswald', sans-serif;
-    background-color: whitesmoke;
+    background-color: $main-black;
     color: white;
     // overflow-x: hidden;
 }
@@ -38,6 +38,234 @@ body {
 }
 //--------------------------------------<< main config for whole page <<-----------------------------------
 main{
-    color: $main-black;
-    
+    width: inherit;
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 5em 0;
+    text-align: center;
+
+    .div-question{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 10em;
+        
+        h2{
+            font-size: 48px;
+            margin-bottom: 0;
+        }
+        h4{
+            font-size: 20px;
+            font-weight: 300;
+        }
+    }
+    .contact-info-container{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        width: 100%;
+        margin: 4em 0 17em 0;
+
+        .contact-info-section{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: center;
+
+            img{
+                width: 2.5em;
+                padding: 3em;
+                border: 1px solid #703601;
+                border-radius: 10em;
+            }
+            h3{
+                font-size: 22px;
+                font-weight: 400;
+            }
+            p{
+                font-size: 20px;
+                font-weight: 200;
+                text-align: center;
+            }
+        }
+    }
+    .geolocation-container{
+        width: inherit;
+        height: auto;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 7em;
+
+        h4{
+            font-size: 18px;
+            font-weight: 200;
+        }
+
+        iframe{
+            width: 80vw;
+            height: 40em;
+        }
+    }
+    .transperent-rule{
+        display: none;
+    }
+
+//---------------------------------<< SCREENS
+    @media screen and (max-width: 980px) and (min-width: 769px){
+        padding: 5em 0;
+
+        .div-question{
+            padding-bottom: 7em;
+            
+            h2{
+                font-size: 48px;
+                margin-bottom: 0;
+            }
+            h4{
+                font-size: 20px;
+            }
+        }
+        .contact-info-container{
+            margin: 3em 0 15em 0;
+
+            .contact-info-section{
+
+                img{
+                    width: 1.5em;
+                    padding: 2.5em;
+                    border: 1px solid #703601;
+                    border-radius: 10em;
+                }
+                h3{
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 18px;
+                }
+            }
+        }
+        .geolocation-container{
+            margin-bottom: 5em;
+
+            h4{
+                font-size: 18px;
+            }
+
+            iframe{
+                width: 80vw;
+                height: 30em;
+            }
+        }
+    }
+    @media screen and (max-width: 768px) and (min-width: 500px){
+        padding: 4em 0;
+
+        .div-question{
+            padding-bottom: 7em;
+            
+            h2{
+                font-size: 44px;
+                margin-bottom: 0;
+            }
+            h4{
+                font-size: 18px;
+            }
+        }
+        .contact-info-container{
+            flex-flow: row wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+            width: 65%;
+            margin: 1em 0 10em 0;
+
+            .contact-info-section{
+                width: 13em;
+                padding: 1em 0;
+
+                img{
+                    width: 1.5em;
+                    padding: 2em;
+                    border: 1px solid #703601;
+                    border-radius: 10em;
+                }
+                h3{
+                    font-size: 22px;
+                }
+                p{
+                    font-size: 20px;
+                }
+            }
+        }
+        .geolocation-container{
+            margin-bottom: 5em;
+
+            h4{
+                font-size: 18px;
+            }
+
+            iframe{
+                width: 80vw;
+                height: 25em;
+            }
+        }
+    }
+    @media screen and (max-width: 499px){
+        padding: 3em 0;
+
+        .div-question{
+            padding-bottom: 3em;
+            
+            h2{
+                font-size: 38px;
+                margin-bottom: 0;
+            }
+            h4{
+                font-size: 16px;
+            }
+        }
+        .contact-info-container{
+            flex-flow: row wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+            width: 65%;
+            margin: 1em 0 4em 0;
+
+            .contact-info-section{
+                width: 90%;
+                padding: 1.5em 0;
+
+                img{
+                    width: 1.5em;
+                    padding: 2em;
+                    border: 1px solid #703601;
+                    border-radius: 10em;
+                }
+                h3{
+                    font-size: 22px;
+                }
+                p{
+                    font-size: 20px;
+                }
+            }
+        }
+        .geolocation-container{
+            margin-bottom: 5em;
+
+            h4{
+                font-size: 18px;
+            }
+
+            iframe{
+                width: 80vw;
+                height: 45vw;
+            }
+        }
+    }
 }

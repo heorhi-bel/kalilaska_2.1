@@ -402,7 +402,7 @@ footer {
 
 body {
   font-family: 'Oswald', sans-serif;
-  background-color: whitesmoke;
+  background-color: #111111;
   color: white; }
 
 .logo-invert {
@@ -414,6 +414,220 @@ body {
   color: #AF1717; }
 
 main {
-  color: #111111; }
+  width: inherit;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5em 0;
+  text-align: center; }
+  main .div-question {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 10em; }
+    main .div-question h2 {
+      font-size: 48px;
+      margin-bottom: 0; }
+    main .div-question h4 {
+      font-size: 20px;
+      font-weight: 300; }
+  main .contact-info-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 100%;
+    margin: 4em 0 17em 0; }
+    main .contact-info-container .contact-info-section {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column nowrap;
+              flex-flow: column nowrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      main .contact-info-container .contact-info-section img {
+        width: 2.5em;
+        padding: 3em;
+        border: 1px solid #703601;
+        border-radius: 10em; }
+      main .contact-info-container .contact-info-section h3 {
+        font-size: 22px;
+        font-weight: 400; }
+      main .contact-info-container .contact-info-section p {
+        font-size: 20px;
+        font-weight: 200;
+        text-align: center; }
+  main .geolocation-container {
+    width: inherit;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 7em; }
+    main .geolocation-container h4 {
+      font-size: 18px;
+      font-weight: 200; }
+    main .geolocation-container iframe {
+      width: 80vw;
+      height: 40em; }
+  main .transperent-rule {
+    display: none; }
+  @media screen and (max-width: 980px) and (min-width: 769px) {
+    main {
+      padding: 5em 0; }
+      main .div-question {
+        padding-bottom: 7em; }
+        main .div-question h2 {
+          font-size: 48px;
+          margin-bottom: 0; }
+        main .div-question h4 {
+          font-size: 20px; }
+      main .contact-info-container {
+        margin: 3em 0 15em 0; }
+        main .contact-info-container .contact-info-section img {
+          width: 1.5em;
+          padding: 2.5em;
+          border: 1px solid #703601;
+          border-radius: 10em; }
+        main .contact-info-container .contact-info-section h3 {
+          font-size: 20px; }
+        main .contact-info-container .contact-info-section p {
+          font-size: 18px; }
+      main .geolocation-container {
+        margin-bottom: 5em; }
+        main .geolocation-container h4 {
+          font-size: 18px; }
+        main .geolocation-container iframe {
+          width: 80vw;
+          height: 30em; } }
+  @media screen and (max-width: 768px) and (min-width: 500px) {
+    main {
+      padding: 4em 0; }
+      main .div-question {
+        padding-bottom: 7em; }
+        main .div-question h2 {
+          font-size: 44px;
+          margin-bottom: 0; }
+        main .div-question h4 {
+          font-size: 18px; }
+      main .contact-info-container {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        width: 65%;
+        margin: 1em 0 10em 0; }
+        main .contact-info-container .contact-info-section {
+          width: 13em;
+          padding: 1em 0; }
+          main .contact-info-container .contact-info-section img {
+            width: 1.5em;
+            padding: 2em;
+            border: 1px solid #703601;
+            border-radius: 10em; }
+          main .contact-info-container .contact-info-section h3 {
+            font-size: 22px; }
+          main .contact-info-container .contact-info-section p {
+            font-size: 20px; }
+      main .geolocation-container {
+        margin-bottom: 5em; }
+        main .geolocation-container h4 {
+          font-size: 18px; }
+        main .geolocation-container iframe {
+          width: 80vw;
+          height: 25em; } }
+  @media screen and (max-width: 499px) {
+    main {
+      padding: 3em 0; }
+      main .div-question {
+        padding-bottom: 3em; }
+        main .div-question h2 {
+          font-size: 38px;
+          margin-bottom: 0; }
+        main .div-question h4 {
+          font-size: 16px; }
+      main .contact-info-container {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        width: 65%;
+        margin: 1em 0 4em 0; }
+        main .contact-info-container .contact-info-section {
+          width: 90%;
+          padding: 1.5em 0; }
+          main .contact-info-container .contact-info-section img {
+            width: 1.5em;
+            padding: 2em;
+            border: 1px solid #703601;
+            border-radius: 10em; }
+          main .contact-info-container .contact-info-section h3 {
+            font-size: 22px; }
+          main .contact-info-container .contact-info-section p {
+            font-size: 20px; }
+      main .geolocation-container {
+        margin-bottom: 5em; }
+        main .geolocation-container h4 {
+          font-size: 18px; }
+        main .geolocation-container iframe {
+          width: 80vw;
+          height: 45vw; } }
 
 /*# sourceMappingURL=contact.css.map */
