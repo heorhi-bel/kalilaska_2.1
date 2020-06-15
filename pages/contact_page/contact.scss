@@ -82,6 +82,7 @@ main{
                 padding: 3em;
                 border: 1px solid #703601;
                 border-radius: 10em;
+                transition: transform .2s ease-out;
             }
             h3{
                 font-size: 22px;
@@ -268,4 +269,15 @@ main{
             }
         }
     }
+
+
+    .contact-info-section{
+        img{
+            &:hover{
+                transform: scale(0.975);
+                transition: .2s ease-in;
+            }
+        }
+    }
 }
+

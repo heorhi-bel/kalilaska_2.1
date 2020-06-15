@@ -486,7 +486,11 @@ main {
         width: 2.5em;
         padding: 3em;
         border: 1px solid #703601;
-        border-radius: 10em; }
+        border-radius: 10em;
+        -webkit-transition: -webkit-transform .2s ease-out;
+        transition: -webkit-transform .2s ease-out;
+        transition: transform .2s ease-out;
+        transition: transform .2s ease-out, -webkit-transform .2s ease-out; }
       main .contact-info-container .contact-info-section h3 {
         font-size: 22px;
         font-weight: 400; }
@@ -629,5 +633,10 @@ main {
         main .geolocation-container iframe {
           width: 80vw;
           height: 45vw; } }
+  main .contact-info-section img:hover {
+    -webkit-transform: scale(0.975);
+            transform: scale(0.975);
+    -webkit-transition: .2s ease-in;
+    transition: .2s ease-in; }
 
 /*# sourceMappingURL=contact.css.map */
