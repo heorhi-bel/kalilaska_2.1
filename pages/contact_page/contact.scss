@@ -44,7 +44,7 @@ main{
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-    padding: 5em 0;
+    padding: 10em 0 5em 0;
     text-align: center;
 
     .div-question{
@@ -52,7 +52,7 @@ main{
         flex-flow: column nowrap;
         align-items: center;
         justify-content: center;
-        padding-bottom: 10em;
+        padding-bottom: 7em;
         
         h2{
             font-size: 48px;

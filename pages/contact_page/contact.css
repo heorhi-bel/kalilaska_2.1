@@ -429,7 +429,7 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 5em 0;
+  padding: 10em 0 5em 0;
   text-align: center; }
   main .div-question {
     display: -webkit-box;
@@ -445,7 +445,7 @@ main {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-bottom: 10em; }
+    padding-bottom: 7em; }
     main .div-question h2 {
       font-size: 48px;
       margin-bottom: 0; }
