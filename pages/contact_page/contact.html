@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <meta name="author" content="Heorhi Dzmitruk">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <link rel="icon" type="ico" sizes="29x26" href="/makets/MAIN PAGE/ico.ico" />
     <link rel="stylesheet" href="/pages/contact_page/contact.css">
     <title>Калi Ласка - Контакты</title>
 </head>
@@ -11,16 +20,17 @@
     <header>
         <div class="menu-high-navbar">
             <ul class="navbar">
-                <li>О НАС</li>
-                <li>МЕНЮ</li>
-                <li>АКЦИИ</li>
-                <li>НОВОСТИ</li>
-                <li>КОНТАКТ</li>
+                <li><a href="/pages/about_us_page/about_us.html">О НАС</a></li>
+                <li><a class="actual-page" href="/pages/menu_page/menu.html">МЕНЮ</a></li>
+                <li><a href="/pages/akcji_page/akcji.html">АКЦИИ</a></li>
+                <li><a href="/pages/news_page/news.html">НОВОСТИ</a></li>
+                <li><a href="/pages/contact_page/contact.html">КОНТАКТ</a></li>
+                <li>
+                    <a class="photo-href" href="/index.html">
+                        <img class="logo-invert kl-logo-ul" src="/makets/MAIN PAGE/logo_original-compressor.png">
+                    </a>
+                </li>
             </ul>
-        </div>
-        <div class="logo-and-order">
-            <img src="/makets/MAIN PAGE/logoКЛ +.png" alt="">
-            <a class="button-order" href="#">ЗАКАЖИ СЕЙЧАС</a>
         </div>
         <span>СВЯЖИСЬ С НАМИ!</span>
     </header>
@@ -69,25 +79,27 @@
     </main>
 
     <footer>
-        <img src="/makets/MAIN PAGE/logoКЛ +.png" alt="KaliLaska Logo">
+        <img class="logo-invert kl-logo-footer" src="/makets/MAIN PAGE/logo_original-compressor.png">
         <ul class="navbar">
-            <li>О НАС</li>
-            <li>МЕНЮ</li>
-            <li>АКЦИИ</li>
-            <li>НОВОСТИ</li>
-            <li>КОНТАКТ</li>
+            <li><a href="/pages/about_us_page/about_us.html">О НАС</a></li>
+            <li><a href="/pages/menu_page/menu.html">МЕНЮ</a></li>
+            <li><a href="/pages/akcji_page/akcji.html">АКЦИИ</a></li>
+            <li><a href="/pages/news_page/news.html">НОВОСТИ</a></li>
+            <li><a href="/pages/contact_page/contact.html">КОНТАКТ</a></li>
         </ul>
         <div class="footer-div-container">
-            <div>
+            <div class="subscribe-div">
                 <h4>ПОДПИСЫВАЙСЯ И БУДЬ С НАМИ 24/7</h4>
-                <img src="/makets/MAIN PAGE/instagram.png" alt="INSTAGRAM">
+                <a class="button-insta" href="https://www.instagram.com/kalilaskakafe/" target="_blank">
+                    <img  src="/makets/MAIN PAGE/instagram.png">
+                </a>
             </div>
-            <a href="#header">НАВЕРХ /\</a>
+            <a href="#top">НАВЕРХ ᐱ</a>
         </div>
         <div class="footer-div-p-container">
-            <p>Made <strong>by @H.Dmitruk</strong></p>
+            <p>Made by <a href="mailto:georgix@mail.ru?subject=Написание сайта:">@H.Dmitruk</a></p>
             <p> 
-                С 2020 КАЛI ЛАСКА. ВСЕ ПРАВА ЗАЩИЩЕНЫ. 
+                &copy; 2020 КАЛI ЛАСКА. ВСЕ ПРАВА ЗАЩИЩЕНЫ. 
                 ЛЮБОЕ ИСПОЛЬЗОВАНИЕ МАТЕРИАЛОВ ДОПУСКАЕТСЯ ТОЛЬКО
                 С СОГЛАСИЯ ПРАВООБЛАДАТЕЛЯ
             </p>

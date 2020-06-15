@@ -1,0 +1,39 @@
+@import '_mixins';
+@import '_header';
+@import '_footer';
+
+*{
+    a{
+        text-decoration: none;
+        color: white;
+        transition: .4s;
+        
+        &:focus{
+            outline: none;
+            border: 2px solid white; 
+        }
+        &:hover{
+            transition: .3s ease-in;
+        }
+    }
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: whitesmoke;
+    color: white;
+    // overflow-x: hidden;
+}
+
+.logo-invert{
+    filter: invert(1);
+}
+
+.red-button{
+
+    &:hover{
+        background-color: white;
+        color: $button-red-color;
+    }
+}
+//--------------------------------------<< main config for whole page <<-----------------------------------
