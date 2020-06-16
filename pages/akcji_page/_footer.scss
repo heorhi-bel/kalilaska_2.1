@@ -1,0 +1,275 @@
+footer{
+    width: inherit;
+    height: auto;
+    background-color: $footer-black;
+    //<--grid layout
+    display: grid;
+    grid-template: 6em 9em 5em  / 1.5fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "logo  list-ul list-ul list-ul list-ul"
+        "logo container container container container"
+        "little-p little-p little-p little-p little-p";
+    //--> grid layout
+
+    .kl-logo-footer{
+        width: 20em;
+        padding-top: 3em;
+        padding-left: 5vw;
+
+        grid-area: logo;
+    }
+
+    .navbar{
+        list-style-type: none;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        padding: 2em 0 0 0;
+
+        grid-area: list-ul;
+
+        li{
+            font-size: 1.3em;
+            font-weight: 600;
+
+            a{
+                &:hover{
+                    padding: 2px 8px;
+                    filter: invert(1);
+                    background-color: black;
+                }
+            }
+            
+        }
+    }
+    .footer-div-container{
+        grid-area: container;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5em 0 4.7vw;
+
+        .subscribe-div{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: center;
+
+            h4{ 
+                font-size: 20px;
+                font-weight: 500;
+            }
+            .button-insta{
+                border: none;
+                background-color: rgba($color: #000000, $alpha: 0);
+                padding: 0;
+                
+
+                img{
+                    width: 2.5em;
+                    filter: invert(1);
+                    border-radius: 30px;
+                    transition-duration: .5s;
+                    &:hover{
+                        filter: invert(0);
+                        background-color: white;
+                        padding: 7px;
+                        
+                        transition: .4s;
+                    }
+                }
+            }
+            
+        }
+        a{
+            font-size: 22px;
+            font-weight: 300;
+            text-align: center;
+            padding: .5em 1em;
+
+            border: 2px solid white;
+
+            &:hover{
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+    .footer-div-p-container{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        grid-area: little-p;
+
+        p:first-child{
+            padding-left: 9em;
+        }
+        p:last-child{
+            font-size: 12px;
+            font-weight: 200;
+            opacity: .87;
+            padding-right: .5vw;
+        }        
+    }
+
+
+
+    //---------->screens
+    @media screen and (max-width: 980px) and (min-width: 769px){
+
+        .kl-logo-footer{
+            width: 12em;
+            padding-top: 3em;
+            padding-left: 2em;
+        }
+    
+        .navbar{
+            padding: 2em 0 0 0;
+    
+            li{
+                font-size: 1em;                
+            }
+        }
+        .footer-div-container{
+            padding: 0 5em 0 4.7vw;
+    
+            .subscribe-div{
+    
+                h4{ 
+                    font-size: 18px;
+                }
+                img{
+                    width: 2.8em;
+    
+                }
+            }
+            a{
+                font-size: 20px;
+                padding: .5em 1em;
+            }
+        }
+        .footer-div-p-container{
+    
+            p:first-child{
+                padding-left: 4em;
+            }
+            p:last-child{
+                font-size: 10px;
+                font-weight: 200;
+                opacity: .87;
+                padding-right: .5vw;
+            }  
+        }      
+    }   
+    
+    @media screen and (max-width: 768px) and (min-width: 500px){
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+
+        .kl-logo-footer{
+            width: 18em;
+            padding: 2em 0 2em 0;
+            order: 1;
+        }
+    
+        .navbar{
+            display: none;
+        }
+        .footer-div-container{
+            flex-flow: column wrap;
+            padding: 0;
+    
+            .subscribe-div{
+    
+                h4{ 
+                    font-size: 18px;
+                }
+                .button-insta{
+                    order: 1;
+
+                    img{
+                        width: 2.8em;
+                    }
+                }
+                
+            }
+            a{
+                font-size: 20px;
+                margin: 1.5em 0;
+                padding: .5em 1em;
+                order: -1;
+            }
+        }
+        .footer-div-p-container{
+            order: 2;
+            flex-flow: column wrap;
+
+            p:first-child{
+                padding: 0;
+            }
+            p:last-child{
+                font-size: 1.7vw;
+            }  
+        }      
+        
+    }
+
+    @media screen and (max-width: 499px){
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+
+        .kl-logo-footer{
+            min-width: 14em;
+            width: 40vw;
+            padding: 2em 0 2em 0;
+            order: 1;
+        }
+    
+        .navbar{
+            display: none;
+        }
+        .footer-div-container{
+            flex-flow: column wrap;
+            padding: 0;
+    
+            .subscribe-div{
+    
+                h4{ 
+                    font-size: 18px;
+                    text-align: center;
+                }
+                .button-insta{
+                    order: 1;
+                    
+                    img{
+                        width: 2em;
+                    }
+                }
+            }
+            a{
+                font-size: 20px;
+                margin: 1.5em 0;
+                padding: .5em 1em;
+                order: -1;
+            }
+        }
+        .footer-div-p-container{
+            order: 2;
+            flex-flow: column wrap;
+
+            p:first-child{
+                padding: 0;
+            }
+            p:last-child{
+                font-size: 12px;
+            }  
+        }      
+    }
+}

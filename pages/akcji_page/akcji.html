@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <meta name="author" content="Heorhi Dzmitruk">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <link rel="icon" type="ico" sizes="29x26" href="/makets/MAIN PAGE/ico.ico" />
     <link rel="stylesheet" href="/pages/akcji_page/akcji.css">
     <title>Калi Ласка - Акции и Предложения</title>
 </head>
 <body>
     <header>
-        <div class="about-us-high-navbar">
+        <div class="menu-high-navbar">
             <ul class="navbar">
-                <li>О НАС</li>
-                <li>МЕНЮ</li>
-                <li>АКЦИИ</li>
-                <li>НОВОСТИ</li>
-                <li>КОНТАКТ</li>
-                <li><img src="/makets/MAIN PAGE/logoКЛ +.png" alt=""></li>
+                <li><a href="/pages/about_us_page/about_us.html">О НАС</a></li>
+                <li><a href="/pages/menu_page/menu.html">МЕНЮ</a></li>
+                <li><a href="/pages/akcji_page/akcji.html">АКЦИИ</a></li>
+                <li><a class="actual-page" href="/pages/news_page/news.html">НОВОСТИ</a></li>
+                <li><a href="/pages/contact_page/contact.html">КОНТАКТ</a></li>
+                <li>
+                    <a class="photo-href" href="/index.html">
+                        <img class="logo-invert kl-logo-ul" src="/makets/MAIN PAGE/logo_original-compressor.png">
+                    </a>
+                </li>
             </ul>
         </div>
         <span>АКЦИИ</span>
@@ -24,7 +37,7 @@
 
     <main>
         <div class="main-head">
-            <img src="/makets/PAGE AKCJI/088-512.webp" alt="">
+            <img src="/makets/PAGE AKCJI/sales-icon.webp" width="64px">
             <h4>ТУТ ТЫ НАЙДЕШЬ АКЦИИ, КОТОРЫЕ ЕСТЬ ВО ВСЕХ РЕСТОРАНАХ КАЛI ЛАСКА</h4>
         </div>
         <div class="for-news-container">
@@ -36,31 +49,33 @@
                     ТОЧКУ ГОРОДА ГОРЯЧИМ, СВЕЖИМ. СТОИОМСТЬ В ДАННОМ СЛУЧАЕ РАВНА 0 РУБ! 
                     ПОКУПАЙ ВЫГОДНО, ЕШЬ ВКУСНО, НЕ ВЫХОДЯ ИЗ ДОМУ!
                 </p>
-                <img src="/makets/PAGE AKCJI/photo_2020-06-03_21-44-32.jpg" alt="">
+                <img src="/makets/PAGE AKCJI/akcji-photo.jpg" width="1px">
             </span>
         </div>
     </main>
 
     <footer>
-        <img src="/makets/MAIN PAGE/logoКЛ +.png" alt="KaliLaska Logo">
+        <img class="logo-invert kl-logo-footer" src="/makets/MAIN PAGE/logo_original-compressor.png">
         <ul class="navbar">
-            <li>О НАС</li>
-            <li>МЕНЮ</li>
-            <li>АКЦИИ</li>
-            <li>НОВОСТИ</li>
-            <li>КОНТАКТ</li>
+            <li><a href="/pages/about_us_page/about_us.html">О НАС</a></li>
+            <li><a href="/pages/menu_page/menu.html">МЕНЮ</a></li>
+            <li><a href="/pages/akcji_page/akcji.html">АКЦИИ</a></li>
+            <li><a href="/pages/news_page/news.html">НОВОСТИ</a></li>
+            <li><a href="/pages/contact_page/contact.html">КОНТАКТ</a></li>
         </ul>
         <div class="footer-div-container">
-            <div>
+            <div class="subscribe-div">
                 <h4>ПОДПИСЫВАЙСЯ И БУДЬ С НАМИ 24/7</h4>
-                <img src="/makets/MAIN PAGE/instagram.png" alt="INSTAGRAM">
+                <a class="button-insta" href="https://www.instagram.com/kalilaskakafe/" target="_blank">
+                    <img  src="/makets/MAIN PAGE/instagram.png">
+                </a>
             </div>
-            <a href="#header">НАВЕРХ /\</a>
+            <a href="#top">НАВЕРХ ᐱ</a>
         </div>
         <div class="footer-div-p-container">
-            <p>Made <strong>by @H.Dmitruk</strong></p>
+            <p>Made by <a href="mailto:georgix@mail.ru?subject=Написание сайта:">@H.Dmitruk</a></p>
             <p> 
-                С 2020 КАЛI ЛАСКА. ВСЕ ПРАВА ЗАЩИЩЕНЫ. 
+                &copy; 2020 КАЛI ЛАСКА. ВСЕ ПРАВА ЗАЩИЩЕНЫ. 
                 ЛЮБОЕ ИСПОЛЬЗОВАНИЕ МАТЕРИАЛОВ ДОПУСКАЕТСЯ ТОЛЬКО
                 С СОГЛАСИЯ ПРАВООБЛАДАТЕЛЯ
             </p>
