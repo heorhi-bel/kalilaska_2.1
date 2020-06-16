@@ -20,7 +20,7 @@
 
 body {
     font-family: 'Oswald', sans-serif;
-    background-color: $main-black;
+    background-color: #f2f3f4;
     color: white;
     // overflow-x: hidden;
 }
@@ -40,14 +40,202 @@ body {
 //-----------------------------------<<MAIN
 
 main{
-    
+    color: $main-black;
     .main-head{
-        
-        img{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
 
+        margin-top: 4em;
+
+        img{
+            width: 48px;
         }
         h4{
-            
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+
+    .for-news-container{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 5em 10px;
+
+        .news-topic{
+            width: 45em;
+            height: 20em;
+            position: relative;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            padding: 1px;
+            margin-bottom: 1em;
+            margin-right: .5em;
+            overflow: hidden;
+
+            border: 1px solid $main-black;
+
+            .text-container{
+                width: 29em;
+                padding: 0 2em 1em 1.5em;
+                transition: .2s;
+
+                h2{
+                    font-size: 32px;
+                }
+                p{
+                    font-size: 18px;
+                    line-height: 1.3em;
+                }
+                &:hover{
+                    transform: scale(1.01);
+                    transition: .3s ;
+                }
+            }  
+            .news-photo{
+                width: 32em;
+                height: 32em;
+                
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                transition: .3s;
+
+                &:hover{
+                    transform: scale(1.02);
+                    transition: .3s;
+                }
+            }
+            .one{
+                background-image: url(/makets/PAGE\ AKCJI/akcji-photo.jpg);
+                background-position-x: center;
+                background-position-y: -5em;
+            }
+            .two{
+                background-image: url(/makets/PAGE\ AKCJI/akcji-photo-2.jpg);
+                background-position-x: center;
+                background-position-y: -8em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 980px) and (min-width: 769px){
+    main{
+
+        .main-head{
+            margin-top: 4em;
+    
+            img{
+                width: 48px;
+            }
+            h4{
+    
+            }
+        }
+    
+        .for-news-container{
+            padding: 5em 10px;
+    
+            .news-topic{
+                width: 22em;
+                height: 16em;
+    
+                padding: 1px;
+                margin-bottom: 1em;
+                margin-right: .5em;
+    
+                .text-container{
+                    width: 29em;
+                    padding: 0 .3em 1em .3em;
+    
+                    h2{
+                        font-size: 22px;
+                        margin-top: 4px;
+                    }
+                    p{
+                        font-size: 14px;
+                        line-height: 1.3em;
+                    }
+                }  
+                .news-photo{
+                    width: 32em;
+                    height: 32em;
+
+                    background-size: 180%;
+                }
+                .one{
+                    background-position-x: center;
+                    background-position-y: 0em;
+                }
+                .two{
+                    background-position-x: center;
+                    background-position-y: 0em;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 500px){
+    main{
+
+        .main-head{
+            margin-top: 4em;
+    
+            img{
+                width: 48px;
+            }
+            h4{
+                width: 60%;
+            }
+        }
+    
+        .for-news-container{
+            padding: 5em 10px;
+    
+            .news-topic{
+                width: 33em;
+                height: 13em;
+    
+                padding: 1px;
+                margin-bottom: 1em;
+                margin-right: .5em;
+    
+                .text-container{
+                    width: 29em;
+                    padding: 0 .3em 1em .3em;
+    
+                    h2{
+                        font-size: 22px;
+                        margin-top: 10px;
+                    }
+                    p{
+                        font-size: 14px;
+                        line-height: 1.3em;
+                    }
+                }  
+                .news-photo{
+                    width: 32em;
+                    height: 15em;
+
+                    background-size: 170%;
+                }
+                .one{
+                    background-position-x: -1em;
+                    background-position-y: top;
+                }
+                .two{
+                    background-position-x: -1em;
+                    background-position-y: top;
+                }
+            }
         }
     }
 }

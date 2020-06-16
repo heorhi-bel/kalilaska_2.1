@@ -20,7 +20,7 @@ header {
   position: relative;
   background-image: url(/makets/PAGE\ AKCJI/header.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: center center; }
   header span {
     display: -webkit-box;
@@ -403,7 +403,7 @@ footer {
 
 body {
   font-family: 'Oswald', sans-serif;
-  background-color: #111111;
+  background-color: #f2f3f4;
   color: white; }
 
 .logo-invert {
@@ -413,5 +413,168 @@ body {
 .red-button:hover {
   background-color: white;
   color: #AF1717; }
+
+main {
+  color: #111111; }
+  main .main-head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 4em; }
+    main .main-head img {
+      width: 48px; }
+    main .main-head h4 {
+      font-size: 18px;
+      text-align: center; }
+  main .for-news-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 5em 10px; }
+    main .for-news-container .news-topic {
+      width: 45em;
+      height: 20em;
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      padding: 1px;
+      margin-bottom: 1em;
+      margin-right: .5em;
+      overflow: hidden;
+      border: 1px solid #111111; }
+      main .for-news-container .news-topic .text-container {
+        width: 29em;
+        padding: 0 2em 1em 1.5em;
+        -webkit-transition: .2s;
+        transition: .2s; }
+        main .for-news-container .news-topic .text-container h2 {
+          font-size: 32px; }
+        main .for-news-container .news-topic .text-container p {
+          font-size: 18px;
+          line-height: 1.3em; }
+        main .for-news-container .news-topic .text-container:hover {
+          -webkit-transform: scale(1.01);
+                  transform: scale(1.01);
+          -webkit-transition: 0.3s;
+          transition: 0.3s; }
+      main .for-news-container .news-topic .news-photo {
+        width: 32em;
+        height: 32em;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-transition: .3s;
+        transition: .3s; }
+        main .for-news-container .news-topic .news-photo:hover {
+          -webkit-transform: scale(1.02);
+                  transform: scale(1.02);
+          -webkit-transition: .3s;
+          transition: .3s; }
+      main .for-news-container .news-topic .one {
+        background-image: url(/makets/PAGE\ AKCJI/akcji-photo.jpg);
+        background-position-x: center;
+        background-position-y: -5em; }
+      main .for-news-container .news-topic .two {
+        background-image: url(/makets/PAGE\ AKCJI/akcji-photo-2.jpg);
+        background-position-x: center;
+        background-position-y: -8em; }
+
+@media screen and (max-width: 980px) and (min-width: 769px) {
+  main .main-head {
+    margin-top: 4em; }
+    main .main-head img {
+      width: 48px; }
+  main .for-news-container {
+    padding: 5em 10px; }
+    main .for-news-container .news-topic {
+      width: 22em;
+      height: 16em;
+      padding: 1px;
+      margin-bottom: 1em;
+      margin-right: .5em; }
+      main .for-news-container .news-topic .text-container {
+        width: 29em;
+        padding: 0 .3em 1em .3em; }
+        main .for-news-container .news-topic .text-container h2 {
+          font-size: 22px;
+          margin-top: 4px; }
+        main .for-news-container .news-topic .text-container p {
+          font-size: 14px;
+          line-height: 1.3em; }
+      main .for-news-container .news-topic .news-photo {
+        width: 32em;
+        height: 32em;
+        background-size: 180%; }
+      main .for-news-container .news-topic .one {
+        background-position-x: center;
+        background-position-y: 0em; }
+      main .for-news-container .news-topic .two {
+        background-position-x: center;
+        background-position-y: 0em; } }
+@media screen and (max-width: 768px) and (min-width: 500px) {
+  main .main-head {
+    margin-top: 4em; }
+    main .main-head img {
+      width: 48px; }
+    main .main-head h4 {
+      width: 60%; }
+  main .for-news-container {
+    padding: 5em 10px; }
+    main .for-news-container .news-topic {
+      width: 33em;
+      height: 13em;
+      padding: 1px;
+      margin-bottom: 1em;
+      margin-right: .5em; }
+      main .for-news-container .news-topic .text-container {
+        width: 29em;
+        padding: 0 .3em 1em .3em; }
+        main .for-news-container .news-topic .text-container h2 {
+          font-size: 22px;
+          margin-top: 10px; }
+        main .for-news-container .news-topic .text-container p {
+          font-size: 14px;
+          line-height: 1.3em; }
+      main .for-news-container .news-topic .news-photo {
+        width: 32em;
+        height: 15em;
+        background-size: 170%; }
+      main .for-news-container .news-topic .one {
+        background-position-x: -1em;
+        background-position-y: top; }
+      main .for-news-container .news-topic .two {
+        background-position-x: -1em;
+        background-position-y: top; } }
 
 /*# sourceMappingURL=akcji.css.map */
