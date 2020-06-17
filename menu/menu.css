@@ -36,7 +36,7 @@ header {
     width: auto;
     height: auto;
     margin: 0;
-    background-color: rgba(17, 17, 17, 0.87); }
+    background-color: rgba(17, 17, 17, 0); }
     header .menu-high-navbar .navbar {
       list-style-type: none;
       display: -webkit-box;

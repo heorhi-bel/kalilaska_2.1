@@ -1,0 +1,29 @@
+.navbar-scroll{
+    list-style-type: none;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    padding: 1vw 0 0 10vw;
+    top: 0;
+    right: .2em;
+    left: .2em;
+
+    background-color: $main-black;
+
+    li{
+        font-size: .5em;
+        font-weight: 400;
+        z-index: 1;
+
+        text-shadow: 3px 3px 4px rgba($color: black, $alpha: .87);
+
+        a:hover{
+            padding: 2px 8px;
+            filter: invert(1);
+            background-color: black;
+        }
+        .kl-logo-ul{
+            width: 1em;
+        }
+    }
+}

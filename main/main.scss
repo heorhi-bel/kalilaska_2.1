@@ -1,5 +1,6 @@
 @import '_mixins';
 @import '_header';
+@import '_navbar-scroll';
 @import '_info';
 @import '_history';
 @import '_qualityfood';
@@ -26,7 +27,7 @@ body {
     font-family: 'Oswald', sans-serif;
     background-color: $main-black;
     color: white;
-    // overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 .logo-invert{
