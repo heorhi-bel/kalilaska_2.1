@@ -191,7 +191,7 @@ header{
     }
 
     @media screen and (max-width: 499px){
-        height: 35em;
+        height: 85vw;
 
         .high-bar{
             background-color: rgba($color: #444444, $alpha: 0);
@@ -237,6 +237,7 @@ header{
 
         .navbar{
             display: none;
+            transition: font-size .3s;
             li{
                 font-size: 1.7vw;
                 
@@ -259,7 +260,7 @@ header{
             margin: 0;
             padding: 7em 0 0 0;
 
-            transition: .5s;
+            transition: background-color .5s;
             background-color: rgba($color: $main-black, $alpha: .87);
             z-index: 1;
 
@@ -269,6 +270,10 @@ header{
                 transition: .3s ease-in;
                 
                 img{    display: none;  }
+            }
+
+            &:focus{
+                outline: none;
             }
         }
         .video{

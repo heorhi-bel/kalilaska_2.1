@@ -13,4 +13,4 @@ function sideBar(event){
 }
 
 
-document.body.onclick = sideBar;
+window.onclick = sideBar;
