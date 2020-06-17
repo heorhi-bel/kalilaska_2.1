@@ -265,6 +265,12 @@ main{
                 padding: 1px;
                 margin-bottom: 1em;
                 margin-right: .5em;
+                transition: .3s;
+
+                &:hover{
+                    border: 1.5px solid $main-black;
+                    transition: .2s;
+                }
     
                 .text-container{
                     width: 29em;
@@ -280,12 +286,22 @@ main{
                         line-height: 1.1em;
                         margin-top: .3em;
                     }
+
+                    &:hover{
+                        transform: none;
+                        transition: .05s ;
+                    }
                 }  
                 .news-photo{
                     width: 32em;
                     height: 15em;
 
                     background-size: 170%;
+
+                    &:hover{
+                        transform: none;
+                        transition: .3s;
+                    }
                 }
                 .one{
                     background-position-x: -2em;
