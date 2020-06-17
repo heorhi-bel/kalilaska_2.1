@@ -239,3 +239,63 @@ main{
         }
     }
 }
+
+@media screen and (max-width: 499px){
+    main{
+
+        .main-head{
+            margin-top: 4em;
+    
+            img{
+                width: 28px;
+            }
+            h4{
+                width: 60%;
+                font-size: 16px;
+            }
+        }
+    
+        .for-news-container{
+            padding: 5em 10px;
+    
+            .news-topic{
+                width: 75vw;
+                height: 40vw;
+    
+                padding: 1px;
+                margin-bottom: 1em;
+                margin-right: .5em;
+    
+                .text-container{
+                    width: 29em;
+                    padding: 0 .3em 1em .3em;
+    
+                    h2{
+                        font-size: 3.8vw;
+                        margin-top: .3em;
+                        margin-bottom: .3em;
+                    }
+                    p{
+                        font-size: 2.75vw;
+                        line-height: 1.1em;
+                        margin-top: .3em;
+                    }
+                }  
+                .news-photo{
+                    width: 32em;
+                    height: 15em;
+
+                    background-size: 170%;
+                }
+                .one{
+                    background-position-x: -2em;
+                    background-position-y: top;
+                }
+                .two{
+                    background-position-x: -1em;
+                    background-position-y: top;
+                }
+            }
+        }
+    }
+}
