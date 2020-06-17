@@ -2,19 +2,20 @@
     list-style-type: none;
     display: flex;
     position: fixed;
-    justify-content: space-between;
-    padding: 1vw 0 0 10vw;
-    top: 0;
-    right: .2em;
-    left: .2em;
+    justify-content: space-evenly;
+    padding: 0 0 0 0;
+    top: -18px;
+    width: 90%;
 
-    background-color: $main-black;
+    transition: background-color .1s ;
+    background-color: rgba($color: $main-black, $alpha: .87);
 
     li{
-        font-size: .5em;
-        font-weight: 400;
-        z-index: 1;
+        font-size: 1em !important;
+        font-weight: 400 !important;
+        z-index: 999;
 
+        transition: font-weight .1s ;
         text-shadow: 3px 3px 4px rgba($color: black, $alpha: .87);
 
         a:hover{
@@ -23,7 +24,7 @@
             background-color: black;
         }
         .kl-logo-ul{
-            width: 1em;
+            width: 4em !important;
         }
     }
 }

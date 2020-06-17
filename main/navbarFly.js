@@ -1,17 +1,18 @@
+let navbar = document.body.querySelector('.navbar')
+let header = document.body.querySelector('header')
+
 function scrollingBar(){
-    let navbar = document.body.querySelector('.navbar')
-    let header = document.body.querySelector('header')
-    alert(header.scrollHeight)
-    alert(window.pageYOffset)
-    // let metrics =
-    if(  ( window.pageYOffset >= (header.scrollHeight /2) ) ) {
+    
+    // alert(window.pageYOffset)
+    if(document.body.clientWidth + 16 <= 768) return;
+ 
+    if(  ( window.pageYOffset >= (header.scrollHeight /1.5) ) ) {
         navbar.classList.add('navbar-scroll');
     }
-    else if( ( window.pageYOffset <= (header.scrollHeight /2) ) ){
+    else if( ( window.pageYOffset <= (header.scrollHeight ) ) ){
         navbar.classList.remove('navbar-scroll');
     }
 }
 
 
-
-document.body.addEventListener('click', scrollingBar)
+window.onscroll = scrollingBar;
