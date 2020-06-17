@@ -5,8 +5,8 @@ function movingHeader(event){
 
     if(event.taget == header) return;
 
-    header.style.backgroundPositionX = (event.clientX - (header.clientWidth /2) ) /120 + 'px';
-    header.style.backgroundPositionY = (event.clientY - (header.clientHeight /2) ) /120 + 'px';
+    header.style.backgroundPositionX = (event.clientX - (header.clientWidth /2) ) /150 + 'px';
+    header.style.backgroundPositionY = (event.clientY - (header.clientHeight /2) ) /150 + 'px';
 }
 
 
