@@ -23,6 +23,7 @@
             position: relative;
             width: 20vw;
             height: auto;
+            transition: .1s;
             
             h3{
                 @extend %h3-options-pc;
@@ -44,8 +45,14 @@
             top: 0;
             left: 0;
 
-
+            transition: .1s;
             border-right: 3px solid white;
+        }
+        .news-state:hover::after{
+            border: 1px solid white;
+            border-right: 3px solid white;
+            transform: scale(1.02);
+            transition: .2s;
         }
     }
 

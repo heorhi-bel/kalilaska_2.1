@@ -649,7 +649,9 @@ header:after {
               justify-content: flex-start;
       position: relative;
       width: 20vw;
-      height: auto; }
+      height: auto;
+      -webkit-transition: .1s;
+      transition: .1s; }
       .news .news-container .news-state h3 {
         margin: 0 0 .5em 0; }
       .news .news-container .news-state p {
@@ -663,7 +665,16 @@ header:after {
       position: absolute;
       top: 0;
       left: 0;
+      -webkit-transition: .1s;
+      transition: .1s;
       border-right: 3px solid white; }
+    .news .news-container .news-state:hover::after {
+      border: 1px solid white;
+      border-right: 3px solid white;
+      -webkit-transform: scale(1.02);
+              transform: scale(1.02);
+      -webkit-transition: .2s;
+      transition: .2s; }
   @media screen and (max-width: 980px) and (min-width: 769px) {
     .news h2 {
       font-size: 48px; }
