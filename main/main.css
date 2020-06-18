@@ -159,15 +159,17 @@ header {
         z-index: 2; }
       header .navbar {
         display: none;
-        -webkit-transition: .4s ease-in;
-        transition: .4s ease-in; }
+        -webkit-transition: font-size .3s;
+        transition: font-size .3s; }
         header .navbar li {
           font-size: 1.7vw; }
           header .navbar li img {
             display: none;
             width: 15vw; }
       header .navbar-open {
-        display: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-flow: column nowrap;
@@ -182,16 +184,22 @@ header {
         top: 0;
         right: 0;
         height: 100%;
-        width: 0;
+        width: 13em;
         margin: 0;
         padding: 7em 0 0 0;
+        -webkit-transition: background-color .5s;
+        transition: background-color .5s;
         background-color: rgba(17, 17, 17, 0.87);
         z-index: 1; }
         header .navbar-open li {
-          font-size: 1.5em;
-          line-height: 5em; }
+          font-size: 1.35em;
+          line-height: 3em;
+          -webkit-transition: .3s ease-in;
+          transition: .3s ease-in; }
           header .navbar-open li img {
             display: none; }
+        header .navbar-open:focus {
+          outline: none; }
       header .video {
         top: 13vh;
         width: 99.7%;
