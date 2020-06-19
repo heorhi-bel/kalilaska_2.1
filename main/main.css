@@ -328,7 +328,7 @@ header:after {
   background-color: rgba(17, 17, 17, 0.87); }
   .navbar-scroll li {
     font-size: 1em !important;
-    font-weight: 400 !important;
+    font-weight: 600 !important;
     z-index: 999;
     -webkit-transition: font-weight 0.1s;
     transition: font-weight 0.1s;

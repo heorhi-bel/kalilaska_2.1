@@ -1,4 +1,4 @@
-let navbar = document.body.querySelector('.navbar')
+let navbar2 = document.body.querySelector('.navbar')
 let header = document.body.querySelector('header')
 
 function scrollingBar(){
@@ -7,12 +7,12 @@ function scrollingBar(){
     if(document.body.clientWidth + 16 <= 768) return;
  
     if(  ( window.pageYOffset >= (header.scrollHeight /1.5) ) ) {
-        navbar.classList.add('navbar-scroll');
+        navbar2.classList.add('navbar-scroll');
     }
     else if( ( window.pageYOffset <= (header.scrollHeight ) ) ){
-        navbar.classList.remove('navbar-scroll');
+        navbar2.classList.remove('navbar-scroll');
     }
 }
 
 
-window.onscroll = scrollingBar;
+window.addEventListener('scroll', scrollingBar ) ;
